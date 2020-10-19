@@ -3,7 +3,8 @@
     <div class="banner-slider">
         <div class="swiper-container banner-swiper-container">
             <div class="swiper-wrapper">
-                  
+                <?php foreach ($newsRecords as $new) {?>
+                <?php if ($new->mediaType=="video"){?>
                 <div class="swiper-slide slides_">
                     <div class="inner_">
 
@@ -16,110 +17,72 @@
 
                         <div class="videoWrap hidden-xs" style="background-image:url('index.html')">
                             <div id="container">
-                            <video id="background_video" loop="" muted="" autoplay="" playinline><source src="assets/frontend/dist/video/AYC-banner.mp4" type="video/mp4"><source src="assets/frontend/dist/video/AYC-banner.webm" type="video/webm;codecs=&quot;vp8, vorbis&quot;"></video>
+
+                            <video id="background_video" loop="" muted="" autoplay="" playinline>
+                            	<source src="<?php echo base_url() ?>assets/frontend/dist/video/<?php echo $new->media; ?>" type="video/mp4">
+                            	<source src="<?php echo base_url() ?>assets/frontend/dist/video/AYC-banner.webm" type="video/webm;codecs=&quot;vp8, vorbis&quot;">
+                            </video>
+
+
+
+
+
+
                             <div id="video_cover" style="display: none;"></div>
-                            
+
                             </div>
                         </div>
+
 
                          <div class="content-box">
                             <div class="content_">
                                 <h1>
-                                    
-                                    <span>Leading</span>
-                                    <span>in developing</span> 
-                                    <span>our nation</span>
+
+                                    <?php echo $new->titre; ?>
+
                                                                     </h1>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <?php }?>
+                <!-- image -->
+                <?php if ($new->mediaType=="image"){?>
                 <div class="swiper-slide slides_">
-                    <div class="inner_">
+                                    <div class="inner_">
 
-                        <div class="overlay_">
-                            <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                x="0px" y="0px" viewBox="0 0 50 50" xml:space="preserve" preserveAspectRatio="none">
-                                <polygon fill="#2E2C54" points="0,0 50,50 0,50 "/>
-                            </svg>
-                        </div>
+                                        <div class="overlay_">
+                                            <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                x="0px" y="0px" viewBox="0 0 50 50" xml:space="preserve" preserveAspectRatio="none">
+                                                <polygon fill="#2E2C54" points="0,0 50,50 0,50 "/>
+                                            </svg>
+                                        </div>
 
-                        <div class="img-box">
-                            <div class="b-lazy img_" data-src="storage/post/6ibPj5LJ3h4OC9sLhijL3TgCJXwnypdaQ2s7OX2J.jpg"></div>
-                        </div>
+                                        <div class="img-box">
+                                            <div class="b-lazy img_" data-src="<?php echo base_url() ?>assets/frontend/dist/images/<?php echo $new->media; ?>"></div>
+                                        </div>
 
-                        <div class="content-box">
-                            <a href="ar/article/our-research/100-questions-about-arab-youth-1.html" target="blank_" class="white_">
-                            <div class="content_">
-                                <h1><p>DOWNLOAD THE REPORT</p></h1>
-                                <div class="read_ ">
-                                    
-                                      
-                                    
-                                </div>
-                            </div>
-                                </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide slides_">
-                    <div class="inner_">
+                                        <div class="content-box">
+                                            <a href="https://arabyouthcenter.org/ar/article/our-research/100-questions-about-arab-youth-1" target="blank_" class="white_">
+                                            <div class="content_">
+                                                <h1><p><?php echo $new->titre; ?></p></h1>
+                                                <div class="read_ ">
 
-                        <div class="overlay_">
-                            <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                x="0px" y="0px" viewBox="0 0 50 50" xml:space="preserve" preserveAspectRatio="none">
-                                <polygon fill="#2E2C54" points="0,0 50,50 0,50 "/>
-                            </svg>
-                        </div>
 
-                        <div class="img-box">
-                            <div class="b-lazy img_" data-src="storage/post/4nMazxjOlTTMW54IPxC70Nl0glbbGgphwCvkZmn1.jpg"></div>
-                        </div>
 
-                        <div class="content-box">
-                            <a href="https://arabyouthresearch.org/#/" target="blank_" class="white_">
-                            <div class="content_">
-                                <h1><p>SHARE YOUR RESEARCH ON THE RESEARCH PLATFORM</p></h1>
-                                <div class="read_ ">
-                                    
-                                      
-                                    
-                                </div>
-                            </div>
-                                </a>
-                        </div>
-                    </div>
-                </div>
-                                <div class="swiper-slide slides_">
-                    <div class="inner_">
+                                                </div>
+                                            </div>
+                                                </a>
+                                        </div>
+                                    </div>
+                 </div>
+                  <?php }?>
+                <?php } ?>
 
-                        <div class="overlay_">
-                            <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                x="0px" y="0px" viewBox="0 0 50 50" xml:space="preserve" preserveAspectRatio="none">
-                                <polygon fill="#2E2C54" points="0,0 50,50 0,50 "/>
-                            </svg>
-                        </div>
 
-                        <div class="img-box">
-                            <div class="b-lazy img_" data-src="storage/post/C0mZo4jvsdzyHDkXc5VQbwEAlzFsRPue5sF1LmM9.jpg"></div>
-                        </div>
 
-                        <div class="content-box">
-                            <a href="https://opportunities.arabyouthcenter.org/" target="blank_" class="white_">
-                            <div class="content_">
-                                <h1><p>Find an Oppotrunity for you on the Arab Youth Opportunity Platform</p></h1>
-                                <div class="read_ ">
-                                    
-                                      
-                                    
-                                </div>
-                            </div>
-                                </a>
-                        </div>
-                    </div>
-                </div>
-                                 
+
+
             </div>
         </div>
 
@@ -157,6 +120,6 @@
 
 
        </div>
-       
+
    </div>
 </section>
