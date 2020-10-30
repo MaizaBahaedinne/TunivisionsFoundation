@@ -28,13 +28,98 @@ public function __construct()
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+
+
+
+	public function new($newId)
 	{
-		$this->loadViews("welcome_message", $this->global, Null, NULL); 
+		$data["new"]=$this->news_model->newsInfo($newId);
+		$this->loadViews("news/view", $this->global, $data , NULL); 
 	}
 
-	function Newslisting(){
-	$data["newsRecords"]=$this->news_model->newsListing();
-	$this->loadViews("welcome_message", $this->global, $data, NULL);
+
+	public function Add()
+	{
+		$this->loadViews("news/new", $this->global, Null , NULL); 
 	}
+
+	public function Edit($newId)
+	{
+		$data["new"]=$this->news_model->newsInfo($newId);
+		$this->loadViews("news/edit", $this->global, $data , NULL); 
+	}
+
+
+	function addNew()
+	{
+						$titreFr = $this->input->post('titreFr');
+				        $contentFr = $this->input->post('contentFr');
+
+				        $file_name = 'avatar__'.$name.'_'.$_FILES['media']['name'];
+		                $file_tmp = $_FILES['media']['tmp_name'];
+		                
+		                $file_destination = 'uploads/news/' . $file_name;
+				            
+				            $newsInfo = array('titreFr'=> $titreFr ,
+				                              'contentFr'=>$contentFr,
+				                               'createdDTM'=>date('Y-m-d H:i:s'),
+				                               'media' => $file_name ,
+				                               'mediaType' => "photo"
+				                             );
+	if(move_uploaded_file($file_tmp, $file_destination) )
+                  { 
+
+                  	$resualt =  $this->news_model->addNew($newsInfo) ;	
+				           if( $resualt > 0 )
+				           {
+
+				           		$this->session->set_flashdata('success', 'l\'actualité a été ajouté avec succées');
+				           }
+				            else
+				            {
+				                $this->session->set_flashdata('error', 'Mise à jour erronée ');
+				            }
+				    }
+				          
+				          redirect('/News/new/'.$resualt)  ;
+	}
+
+
+	function editNew($newId)
+	{
+						$titreFr = $this->input->post('titreFr');
+				        $contentFr = $this->input->post('contentFr');
+
+				        $file_name = 'avatar__'.$name.'_'.$_FILES['media']['name'];
+		                $file_tmp = $_FILES['media']['tmp_name'];
+		                
+		                $file_destination = 'uploads/news/' . $file_name;
+				            
+				            $newsInfo = array('titreFr'=> $titreFr ,
+				                              'contentFr'=>$contentFr,
+				                               'createdDTM'=>date('Y-m-d H:i:s'),
+				                               'media' => $file_name ,
+				                               'mediaType' => "photo"
+				                             );
+				if(move_uploaded_file($file_tmp, $file_destination) )
+                  { 
+
+                  	$resualt =  $this->news_model->editNew($newsInfo, $newId) ;	
+				           if( $resualt > 0 )
+				           {
+
+				           		$this->session->set_flashdata('success', 'l\'actualité a été ajouté avec succées');
+				           }
+				            else
+				            {
+				                $this->session->set_flashdata('error', 'Mise à jour erronée ');
+				            }
+				    }
+				          
+				          redirect('/News/new/'.$resualt)  ;
+	}
+
+
+
+
 }
