@@ -32,7 +32,9 @@
 	<meta name="keywords" content="Tunivisions Foundation" />
 	<meta name="author" content="Maiza Koussay Bahaedinne" />
  
-	<link rel="stylesheet" href="<?php echo base_url() ?>assets/frontend/dist/styles/mainc4ca.css?1">   
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/frontend/dist/styles/mainc4ca.css?1"> 
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/frontend/dist/styles/page.css">  
+
 	<link rel="stylesheet" href="<?php echo base_url() ?>assets/frontend/dist/styles/devpe4da.css?5">  
 	<style>
     .loader {
@@ -98,6 +100,10 @@
     		border: none;
     	}
     </style>
+
+        <script defer src="<?php echo base_url() ?>assets/frontend/dist/scripts/min/dropify.min.js"></script> 
+       <script src="https://cdn.tiny.cloud/1/vqf4xobfz4h7owrwfo1qar98sig5s2yt4cgnuskbexcf8zqh/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
 </head>
 <body  class="en home__page __index" >
  <!--[if lt IE 8]>
@@ -106,7 +112,7 @@
 	<header id="header">
     <nav class="navbar navbar-light">
         <div class="barnd_box left_">
-            <a class="navbar-brand-2" href="<?php echo base_url() ?>" title=""><img src="<?php echo base_url() ?>assets/frontend/dist/images/logorouge.png" alt="" ></a>
+            <a  href="<?php echo base_url() ?>" title=""><img width="250px" src="<?php echo base_url() ?>assets/frontend/dist/images/logorouge.png" alt="" ></a>
         </div>
 
         <div class="nav_box">
@@ -212,7 +218,16 @@
 </div>
 
 
-	
+	<ol class="fl-social">
+    
+            <li><a target="_blank" href="https://www.facebook.com/Arabyouthcenter-350909838644111/"><i class="icon icon-icons-facebook"></i></a></li>
+            <li><a target="_blank" href="https://www.youtube.com/channel/UCIXTcok5veUg6_168LAjJ-w"><i class="icon icon-icons-youtube"></i></a></li>
+
+                <li><a target="_blank" href="https://twitter.com/ArabYouthCenter"><i class="icon icon-icons-twitter"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/arabyouthcenter/"><i class="icon icon-icons-instagram"></i></a></li>
+        <li><a href="../../en.html#contact" title="" target="_blank"><i class="icon icon-info-2"></i></a></li>
+
+</ol>
 
 
 
