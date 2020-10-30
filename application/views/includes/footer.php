@@ -64,6 +64,7 @@
 
 <script src="<?php echo base_url() ?>assets/frontend/dist/scripts/min/home_plugins.js"></script>
 <script src="<?php echo base_url() ?>assets/frontend/dist/scripts/min/home.js"></script> 
+<script src="<?php echo base_url() ?>assets/frontend/dist/scripts/min/page.js"></script> 
 
 <script src="../cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../www.google.com/recaptcha/api57b8.js?onload=myCaptchaCallBack&amp;render=explicit&amp;hl=en" async defer></script>
@@ -364,6 +365,55 @@ e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 })();
 </script>	<script>
 </script>
+<script>
+            $(document).ready(function(){
+                
+              // Translated
+                $('.dropify-fr').dropify({
+                    messages: {
+                        default: 'Glissez-déposez un fichier ici ou cliquez',
+                        replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                        remove:  'Supprimer',
+                        error:   'Désolé, le fichier trop volumineux'
+                    }
+                });
+
+                // Used events
+                var drEvent = $('#input-file-events').dropify();
+
+                drEvent.on('dropify.beforeClear', function(event, element){
+                    return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+                });
+
+                drEvent.on('dropify.afterClear', function(event, element){
+                    alert('File deleted');
+                });
+
+                drEvent.on('dropify.errors', function(event, element){
+                    console.log('Has Errors');
+                });
+
+
+
+                
+
+
+            });
+    </script>
+
+
+    <script>
+    tinymce.init({
+      selector: '#TinyMCE',
+      plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+      toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+    });
+  </script>
+
+
 </body>
 
 <!-- Mirrored from arabyouthcenter.org/en by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Oct 2020 19:59:50 GMT -->
