@@ -19,7 +19,7 @@
                             <div id="container">
 
                             <video id="background_video" loop="" muted="" autoplay="" playinline>
-                            	<source src="<?php echo base_url() ?>assets/frontend/dist/video/<?php echo $new->media; ?>" type="video/mp4">
+                            	<source src="<?php echo base_url() ?>uploads/news/<?php echo $new->media; ?>" type="video/mp4">
                             	<source src="<?php echo base_url() ?>assets/frontend/dist/video/AYC-banner.webm" type="video/webm;codecs=&quot;vp8, vorbis&quot;">
                             </video>
 
