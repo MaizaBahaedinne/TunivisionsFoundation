@@ -11,7 +11,7 @@
                         <div class="overlay_">
                             <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 x="0px" y="0px" viewBox="0 0 50 50" xml:space="preserve" preserveAspectRatio="none">
-                                <polygon fill="#2E2C54" points="0,0 50,50 0,50 "/>
+                                <polygon fill="#2E2C54" points="0,0 50,50 0,50 "/> jjhgh
                             </svg>
                         </div>
 

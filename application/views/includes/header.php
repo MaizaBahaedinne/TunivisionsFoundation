@@ -117,7 +117,8 @@
 
         <div class="nav_box">
             <div class="lang-swtich-mob">
-                <a class="lang-switch" href="ar.html"><span>ع</span></a>
+                <a class="lang-switch" href="ar.php"><span>ع</span></a>
+               
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="burger_box">
@@ -220,8 +221,8 @@
 
 	<ol class="fl-social">
     
-            <li><a target="_blank" href="https://www.facebook.com/Arabyouthcenter-350909838644111/"><i class="icon icon-icons-facebook"></i></a></li>
-            <li><a target="_blank" href="https://www.youtube.com/channel/UCIXTcok5veUg6_168LAjJ-w"><i class="icon icon-icons-youtube"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/Tunivisionsfoundation"><i class="icon icon-icons-facebook"></i></a></li>
+            <li><a target="_blank" href="https://www.youtube.com/channel/UCARV6Ni2vFLsrfNfHENhbyA"><i class="icon icon-icons-youtube"></i></a></li>
 
                 <li><a target="_blank" href="https://twitter.com/ArabYouthCenter"><i class="icon icon-icons-twitter"></i></a></li>
                 <li><a target="_blank" href="https://www.instagram.com/arabyouthcenter/"><i class="icon icon-icons-instagram"></i></a></li>
