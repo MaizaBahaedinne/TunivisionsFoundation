@@ -53,20 +53,27 @@ public function __construct()
 	function addNew()
 	{
 						$titreFr = $this->input->post('titreFr');
-				        $contentFr = $this->input->post('contentFr');
-
+						$contentFr = $this->input->post('contentFr');
+						$titreAr = $this->input->post('titreAr');
+						$contentAr = $this->input->post('contentAr');
+						$titreEn = $this->input->post('titreEn');
+						$contentEn = $this->input->post('contentEn');
 				        $file_name = 'avatar__'.$name.'_'.$_FILES['media']['name'];
 		                $file_tmp = $_FILES['media']['tmp_name'];
 		                
 		                $file_destination = 'uploads/news/' . $file_name;
 				            
 				            $newsInfo = array('titreFr'=> $titreFr ,
-				                              'contentFr'=>$contentFr,
+											  'contentFr'=>$contentFr,
+											  'titreAr'=> $titreAr ,
+											  'contentAr'=>$contentAr,
+											  'titreEn'=> $titreEn,
+				                              'contentEn'=>$contentEn,
 				                               'createdDTM'=>date('Y-m-d H:i:s'),
 				                               'media' => $file_name ,
 				                               'mediaType' => "photo"
-				                             );
-	if(move_uploaded_file($file_tmp, $file_destination) )
+											 );
+			 if(move_uploaded_file ($file_tmp, $file_destination) )
                   { 
 
                   	$resualt =  $this->news_model->addNew($newsInfo) ;	
@@ -78,7 +85,7 @@ public function __construct()
 				            else
 				            {
 				                $this->session->set_flashdata('error', 'Mise à jour erronée ');
-				            }
+				            } 
 				    }
 				          
 				          redirect('/News/new/'.$resualt)  ;
@@ -88,15 +95,23 @@ public function __construct()
 	function editNew($newId)
 	{
 						$titreFr = $this->input->post('titreFr');
-				        $contentFr = $this->input->post('contentFr');
+						$contentFr = $this->input->post('contentFr');
+						$titreAr = $this->input->post('titreAr');
+						$contentAr = $this->input->post('contentAr');
+						$titreEn = $this->input->post('titreEn');
+						$contentEn = $this->input->post('contentEn');
 
 				        $file_name = 'avatar__'.$name.'_'.$_FILES['media']['name'];
 		                $file_tmp = $_FILES['media']['tmp_name'];
-		                
+		                 
 		                $file_destination = 'uploads/news/' . $file_name;
 				            
 				            $newsInfo = array('titreFr'=> $titreFr ,
-				                              'contentFr'=>$contentFr,
+											  'contentFr'=>$contentFr,
+											  'titreAr'=> $titreAr ,
+											  'contentAr'=>$contentAr,
+											  'titreEn'=> $titreEn,
+				                              'contentEn'=>$contentEn,
 				                               'createdDTM'=>date('Y-m-d H:i:s'),
 				                               'media' => $file_name ,
 				                               'mediaType' => "photo"
@@ -104,7 +119,7 @@ public function __construct()
 				if(move_uploaded_file($file_tmp, $file_destination) )
                   { 
 
-                  	$resualt =  $this->news_model->editNew($newsInfo, $newId) ;	
+                  	$resualt =  $this->news_model->editNew($newsInfo, $newsId) ;	
 				           if( $resualt > 0 )
 				           {
 
