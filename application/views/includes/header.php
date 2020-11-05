@@ -37,6 +37,13 @@
 
 	<link rel="stylesheet" href="<?php echo base_url() ?>assets/frontend/dist/styles/devpe4da.css?5">  
 	<style>
+
+        .alligator-profile {
+        object-fit: cover;
+        object-position: 20% 50%;
+        width: 100px;
+        height: 100px;
+    }
     .loader {
         position: fixed;
         bottom:0px;
@@ -130,69 +137,69 @@
                 <div class="navbar-inner">
                     <ul class="navbar-nav">
                                 <li class="hasChild nav-item">
-                                    <a class="nav-link " href="en/about.html">About</a>
+                                    <a class="nav-link " href="en/about.html">À propos</a>
                                     <span class="downArrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></span>
                                     <ul class="dropdown-menu" role="menu">
                                                                                     <li class="nav-item">
-                                                <a href="en/about.html#who-we-are" class="nav-link" title="Who we are">Who we are</a>
+                                                <a href="en/about.html#who-we-are" class="nav-link" title="Who we are">Qui nous sommes ?</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/about.html#our-vision" class="nav-link" title="Our Vision &amp; Mission">Our Vision &amp; Mission</a>
+                                                <a href="en/about.html#our-vision" class="nav-link" title="Our Vision &amp; Mission">Notre vision &amp; Mission</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/about.html#our-values" class="nav-link" title="Our Values">Our Values</a>
+                                                <a href="en/about.html#our-values" class="nav-link" title="Our Values">Nos valeurs</a>
                                             </li>
                                                                                     <li class="nav-item">
                                                 <a href="en/about.html#specializations" class="nav-link" title="Specializations">Specializations</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/about.html#partners" class="nav-link" title="Partners">Partners</a>
+                                                <a href="en/about.html#partners" class="nav-link" title="Partners">Les partenaires</a>
                                             </li>
                                                                             </ul>
                                 </li>
 
                                 <li class="hasChild nav-item">
-                                    <a class="nav-link " href="en/media.html">Media</a>
+                                    <a class="nav-link " href="en/media.html">Médias</a>
                                     <span class="downArrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></span>
                                     <ul class="dropdown-menu" role="menu">
                                                                                     <li class="nav-item">
                                                 <a href="en/media.html#newsletter" class="nav-link" title="Newsletter">Newsletter</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/media.html#news" class="nav-link" title="News">News</a>
+                                                <a href="en/media.html#news" class="nav-link" title="News">Nouvelles</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/media.html#gallery" class="nav-link" title="Gallery">Gallery</a>
+                                                <a href="en/media.html#gallery" class="nav-link" title="Gallery">Galerie</a>
                                             </li>
                                                                             </ul>
                                 </li>
                                 <li class="hasChild nav-item">
-                                    <a class="nav-link " href="en/team.html">Team</a>
+                                    <a class="nav-link " href="en/team.html">Équipe</a>
                                     <span class="downArrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></span>
                                     <ul class="dropdown-menu" role="menu">
                                                                                     <li class="nav-item">
-                                                <a href="en/team.html#the-team" class="nav-link" title="The Team">The Team</a>
+                                                <a href="en/team.html#the-team" class="nav-link" title="The Team">L'équipe</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/team.html#join-the-team" class="nav-link" title="Join The Team">Join The Team</a>
+                                                <a href="en/team.html#join-the-team" class="nav-link" title="Join The Team">Rejoins l'équipe</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/team.html#our-founder" class="nav-link" title="Our President">Our President</a>
+                                                <a href="en/team.html#our-founder" class="nav-link" title="Our President">Notre président</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/team.html#our-leadership" class="nav-link" title="Our Leadership">Our Leadership</a>
+                                                <a href="en/team.html#our-leadership" class="nav-link" title="Our Leadership">Notre leadership</a>
                                             </li>
                                                                             </ul>
                                 </li>
                                                                                                                 <li class="hasChild nav-item">
-                                    <a class="nav-link " href="en/impact.html">Our Impact</a>
+                                    <a class="nav-link " href="en/impact.html">Notre impact</a>
                                     <span class="downArrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></span>
                                     <ul class="dropdown-menu" role="menu">
                                                                                     <li class="nav-item">
-                                                <a href="en/impact.html#achievement-reports" class="nav-link" title="Achievement Reports">Achievement Reports</a>
+                                                <a href="en/impact.html#achievement-reports" class="nav-link" title="Achievement Reports">Rapports de réussite</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/impact.html#success-stories-1" class="nav-link" title="Success Stories">Success Stories</a>
+                                                <a href="en/impact.html#success-stories-1" class="nav-link" title="Success Stories">Réussites</a>
                                             </li>
                                                                             </ul>
                                 </li>

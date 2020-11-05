@@ -9,6 +9,9 @@ class Howweare extends BaseController{
 		$this->load->model('howweare_model');
 	}
 
+
+
+
 	public function Edit($howweareId){
 		$data["howweare"]=$this->howweare_model->howweareInfo();
 		$this->loadViews("howweare/edit", $this->global, $data , NULL);

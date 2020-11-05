@@ -18,16 +18,9 @@ class Successtory extends BaseController {
 		$textEn = $this->input->post('textEn');
 
 
-
-
-
-
 		$successtoryInfo = array('textAr'=> $textAr ,
 			'textFr'=> $textFr ,
 			'textEn'=> $textEn
-
-
-
 		);
 
 
