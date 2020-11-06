@@ -35,14 +35,15 @@
 	<link rel="stylesheet" href="<?php echo base_url() ?>assets/frontend/dist/styles/mainc4ca.css?1"> 
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/frontend/dist/styles/page.css">  
 
-	<link rel="stylesheet" href="<?php echo base_url() ?>assets/frontend/dist/styles/devpe4da.css?5">  
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/frontend/dist/styles/devpe4da.css?5"> 
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/frontend/dist/styles/devp.css?5">   
 	<style>
 
         .alligator-profile {
         object-fit: cover;
-        object-position: 20% 50%;
-        width: 100px;
-        height: 100px;
+        object-position: 50% 20%;
+        width: 250px;
+        height: 250px;
     }
     .loader {
         position: fixed;
@@ -137,23 +138,21 @@
                 <div class="navbar-inner">
                     <ul class="navbar-nav">
                                 <li class="hasChild nav-item">
-                                    <a class="nav-link " href="en/about.html">À propos</a>
+                                    <a class="nav-link " href="<?php echo base_url() ?>About">À propos</a>
                                     <span class="downArrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></span>
                                     <ul class="dropdown-menu" role="menu">
                                                                                     <li class="nav-item">
-                                                <a href="en/about.html#who-we-are" class="nav-link" title="Who we are">Qui nous sommes ?</a>
+                                                <a href="<?php echo base_url() ?>About#who-we-are" class="nav-link" title="Who we are">Qui nous sommes ?</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/about.html#our-vision" class="nav-link" title="Our Vision &amp; Mission">Notre vision &amp; Mission</a>
+                                                <a href="<?php echo base_url() ?>About#our-vision" class="nav-link" title="Our Vision &amp; Mission">Notre vision &amp; Mission</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/about.html#our-values" class="nav-link" title="Our Values">Nos valeurs</a>
+                                                <a href="<?php echo base_url() ?>About#our-values" class="nav-link" title="Our Values">Nos valeurs</a>
                                             </li>
+                                                                                   
                                                                                     <li class="nav-item">
-                                                <a href="en/about.html#specializations" class="nav-link" title="Specializations">Specializations</a>
-                                            </li>
-                                                                                    <li class="nav-item">
-                                                <a href="en/about.html#partners" class="nav-link" title="Partners">Les partenaires</a>
+                                                <a href="<?php echo base_url() ?>About#partners" class="nav-link" title="Partners">Les partenaires</a>
                                             </li>
                                                                             </ul>
                                 </li>
@@ -163,18 +162,18 @@
                                     <span class="downArrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></span>
                                     <ul class="dropdown-menu" role="menu">
                                                                                     <li class="nav-item">
-                                                <a href="en/media.html#newsletter" class="nav-link" title="Newsletter">Newsletter</a>
+                                                <a href="<?php echo base_url() ?>Media#newsletter" class="nav-link" title="Newsletter">Newsletter</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/media.html#news" class="nav-link" title="News">Nouvelles</a>
+                                                <a href="<?php echo base_url() ?>Media#news" class="nav-link" title="News">Nouvelles</a>
                                             </li>
                                                                                     <li class="nav-item">
-                                                <a href="en/media.html#gallery" class="nav-link" title="Gallery">Galerie</a>
+                                                <a href="<?php echo base_url() ?>Media#gallery" class="nav-link" title="Gallery">Galerie</a>
                                             </li>
                                                                             </ul>
                                 </li>
                                 <li class="hasChild nav-item">
-                                    <a class="nav-link " href="en/team.html">Équipe</a>
+                                    <a class="nav-link " href="<?php echo base_url() ?>Team">Équipe</a>
                                     <span class="downArrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></span>
                                     <ul class="dropdown-menu" role="menu">
                                                                                     <li class="nav-item">
