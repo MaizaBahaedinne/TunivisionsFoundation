@@ -12,7 +12,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="ltr">
+<html lang="fr" dir="ltr" class="ltr">
 	
 <!-- Mirrored from arabyouthcenter.org/en by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Oct 2020 19:59:11 GMT -->
 <!-- Added by HTTrack -->
