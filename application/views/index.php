@@ -63,7 +63,7 @@
                                         </div>
 
                                         <div class="content-box">
-                                            <a href="https://arabyouthcenter.org/ar/article/our-research/100-questions-about-arab-youth-1" target="blank_" class="white_">
+                                            <a href="<?php echo base_url ()?>News/new/<?php echo $new->newsId; ?>" target="blank_" class="white_">
                                             <div class="content_">
                                                 <h1><p><?php echo $new->titreFr; ?></p></h1>
                                                 <div class="read_ ">
