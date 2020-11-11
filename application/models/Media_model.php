@@ -59,11 +59,11 @@ class Media_model extends CI_Model {
           */
 
 
-        function contentListing()
+        function contentListing($albumId)
             {
                  $this->db->select('*');
                 $this->db->from('tbl_media_album_content as BaseTbl');
-                $this->db->join('tbl_media_album', 'tbl_media_album.albumId = BaseTbl.albumId');
+                $this->db->where('BaseTbl.albumId = ', $albumId); 
                 $this->db->order_by('BaseTbl.createdDtm', 'DESC');
                 $query = $this->db->get();
                 $result = $query->result();
@@ -83,11 +83,23 @@ class Media_model extends CI_Model {
             }
 
 
+            function Cover($albumId)
+            {
+                $this->db->select('*');
+                $this->db->from('tbl_media_album_content as BaseTbl');
+                $this->db->join('tbl_media_album', 'tbl_media_album.albumId = BaseTbl.albumId');
+                $this->db->where('BaseTbl.albumId = ',$albumId);
+                $query = $this->db->get();
+                $result = $query->row();
+                return $result;
+            }
+
+
 
 	    function addContent($Content)
 	    {
 	        $this->db->trans_start();
-	        $this->db->insert('tbl_media_album_content', $contentId);
+	        $this->db->insert('tbl_media_album_content', $Content);
 	        $insert_id = $this->db->insert_id();
 	        $this->db->trans_complete();  
 	        return $insert_id;

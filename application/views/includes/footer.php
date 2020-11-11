@@ -37,7 +37,7 @@
         </li>
         <li> <a href="index.html#contact" class="link_">Contact</a></li>
       </div>
-      <span>All rights reserved © Arab Youth Center</span>
+      <span>All rights reserved © Tunivisions Foundation</span>
     </div>
   </div>
 </footer>	    
@@ -68,6 +68,9 @@
 
 <script src="../cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../www.google.com/recaptcha/api57b8.js?onload=myCaptchaCallBack&amp;render=explicit&amp;hl=en" async defer></script>
+
+<script src="<?php echo base_url() ?>assets/frontend/dist/scripts/min/page_plugins.js"></script>
+
 <script>
 	if($.validator){
 		
@@ -189,7 +192,7 @@ function sendAjax(url,type,dataToSend,func,loaderDivID){
      spaceBetween: 0,
      centeredSlides: true,
      //loop:true,
-     //effect: 'fade',
+     effect: 'fade',
      autoplay: {
        delay: 6000,
          disableOnInteraction: false,
@@ -211,8 +214,8 @@ function sendAjax(url,type,dataToSend,func,loaderDivID){
     });
  
     var newsSlider = new Swiper('.news_wrapper .swiper-container', {
-       slidesPerView: 1,
-       slidesPerColumn: 1,
+       slidesPerView: 4,
+       slidesPerColumn: 0,
        spaceBetween: 0,
        navigation: {
          nextEl: '.news-navigation .news-next',
@@ -224,9 +227,9 @@ function sendAjax(url,type,dataToSend,func,loaderDivID){
        },
        breakpoints: {
          1024: {
-           slidesPerView: 1,
+           slidesPerView: 2,
            slidesPerColumn: 1,
-           spaceBetween: 20,
+           spaceBetween: 0,
          }
        },
        on: {
@@ -363,8 +366,9 @@ var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
 i.src = "../cdn.curator.io/published/561847ee-9e03-4e79-bf0e-9eb7ad674d79.js";
 e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 })();
-</script>	<script>
-</script>
+</script>	
+
+
 <script>
             $(document).ready(function(){
                 
