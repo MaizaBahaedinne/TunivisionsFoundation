@@ -8,7 +8,7 @@
        url : 'https://www.tunivisions.link/Api/AuthentificationAPI/'+$('#email').val()+'/'+$('#password').val(),
        type : 'GET',
        success : function(response){ 
-           alert(response) ;
+           console.log(response) ;
        },
 
        error : function(){
