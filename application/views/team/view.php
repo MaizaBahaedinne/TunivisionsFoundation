@@ -4,7 +4,7 @@
         <div class="abt-nav">
         <ul class="abt-nav-list">
             <li class="abt-nav-items ">
-            <a data-href="#our-founder" href="media.html#our-founder" class="link_ ">
+            <a data-href="#our-founder" href="?php echo base_url() ?>#our-founder" class="link_ ">
                 <div class="img_box">
                 <div class="img_ b-lazy" data-src="https://arabyouthcenter.org/assets/frontend/dist/images/team_i_1.svg"></div>
                 </div>
@@ -16,7 +16,7 @@
                 </div>
             </a></li>
             <li class="abt-nav-items">
-            <a data-href="#our-leadership" href="media.html#our-leadership" class="link_">
+            <a data-href="#our-leadership" href="?php echo base_url() ?>#our-leadership" class="link_">
                 <div class="img_box">
                 <div class="img_ b-lazy" data-src="https://arabyouthcenter.org/assets/frontend/dist/images/team_i_2.svg"></div>
                 </div>
@@ -28,7 +28,7 @@
             </a>
             </li>
             <li class="abt-nav-items">
-                <a data-href="#the-team" href="media.html#the-team" class="link_">
+                <a data-href="#the-team" href="?php echo base_url() ?>#the-team" class="link_">
                     <div class="img_box">
                     <div class="img_ b-lazy" data-src="https://arabyouthcenter.org/assets/frontend/dist/images/team_i_3.svg"></div>
                     </div>
@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li class="abt-nav-items">
-                <a data-href="#join-the-team" href="media.html#join-the-team" class="link_">
+                <a data-href="#join-the-team" href="<?php echo base_url() ?>#join-the-team" class="link_">
                     <div class="img_box">
                         <div class="img_ b-lazy" data-src="https://arabyouthcenter.org/assets/frontend/dist/images/team_i_4.svg"></div>
                     </div>
@@ -57,7 +57,7 @@
   </div>  <section class="page-section who-we banner_section team_banner" >
     <div class="section-title">
       
-      <span>Our Team</span>
+      <span>Notre équipe</span>
     </div>
     <div class="container ">
 
@@ -73,7 +73,7 @@
 
           <div class="content-wrapper no_pad">
             <div class="subtitle_">
-              <h2>Our President</h2>
+              <h2>Notre président</h2>
             </div>
             <div class="text_box">
                 <p><strong>His Highness Sheikh Mansour bin Zayed Al Nahyan</strong></p>
@@ -98,7 +98,7 @@ Serving as a platform for bright young minds to meet so that the nations can uni
   <div class="new_suc_details_wrapper">
     <div class="n_s_d_bottom full_">
         <div class="content_">
-          <span class="position_">Our President</span>
+          <span class="position_">Notre président</span>
         </div>
         <div class="text_box">
           <p>His Highness Sheikh Mansour bin Zayed Al Nahyan was born in Abu Dhabi in 1970. After receiving his high school diploma through the Abu Dhabi school system, His Highness continued his studies in the United States, where he was awarded his Bachelor&#39;s degree in International Relations in 1993. HH Sheikh Mansour was appointed as Chairman of the Office of his late father, HH Sheikh Zayed bin Sultan, a post he held until Sheikh Zayed&#39;s sad demise in November 2004. In November 2004, HH Sheikh Mansour was appointed as the Minister of Presidential Affairs, a ministerial portfolio created following the amalgamation of The Office of HH the President and The Presidential Court to form the Ministry of Presidential Affairs. In 2006, His Highness was appointed Chairman of the Ministerial Council for Services. In 2007, HH Sheikh Mansour was appointed Chairman of the Emirates Investment Authority (EIA), the only Sovereign Wealth Fund of the Federal Government of the United Arab Emirates. In May 2009, with the formation of the new Cabinet, HH Sheikh Mansour bin Zayed was appointed Deputy Prime Minister, a position he holds to date along with that of Minister of Presidential Affairs. In addition, HH Sheikh Mansour bin Zayed chairs a number of local departments, public corporations and centres. Amongst these are - the Abu Dhabi Judicial Department (ADJD), - the Abu Dhabi Fund for Development (ADFD), which awards soft loans and grants to developing countries, - the National Centre for Documentation and Research (NCDR), - the Abu Dhabi Food Control Authority (ADFCA), - Abu Dhabi&rsquo;s International Petroleum Investment Company (IPIC), - the Board of Trustees of the National Centre of Meteorology &amp; Seismology, - the Emirates Racing Authority, and - the Khalifa bin Zayed Charity Foundation (KBZF), a pioneer entity in supporting poor and needy communities through the provision of main infrastructure such as schools and hospitals, etc. In addition to these positions, HH Sheikh Mansour has been, since 2005, the Deputy Chairman of the Abu Dhabi Education Council (ADEC). He is also a member of the Supreme Petroleum Council (SPC), the Board of Directors of the Abu Dhabi Investment Authority (ADICA), the Board of Directors of the Abu Dhabi Investment Council (ADIC) and the Border Affairs Council (BAC), the UAE&#39;s official competent authority mandated to deal with borders issues.&nbsp;</p>        
@@ -110,69 +110,34 @@ Serving as a platform for bright young minds to meet so that the nations can uni
         <div class="mission_vision_content_wrapper " id="our-leadership">
         <div class="gallery_inner">
             <div class="subtitle_ white_">
-                <h2>Our Leadership</h2>
+                <h2>Note Leadership</h2>
             </div>
 
             <div class="leaders_wrapper">
-                <ul class="leader_list">
-                     <li>
-                        <div class="content_">
-                            <div class="img-box">
-                                <div class="img_ b-lazy" data-src="https://www.tunivisions.link/uploads/avatar/<?php echo $EM->avatar ?>" ></div>
-                            </div>
 
-                            <div class="text_">
-                                <div class="text_box">
-                                    <p><strong><?php echo $EM->name ?></strong></p>
-                                    <p>Manager executif</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="content_">
-                            <div class="img-box">
-                                <div class="img_ b-lazy" data-src="https://www.tunivisions.link/uploads/avatar/<?php echo $CA->avatar ?>" ></div>
-                            </div>
-
-                            <div class="text_">
-                                <div class="text_box">
-                                    <p><strong><?php echo $CA->name ?></strong></p>
-                                    <p>Coordinateur National Alumni Chapter</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                     <li>
-                        <div class="content_">
-                            <div class="img-box">
-                                <div class="img_ b-lazy" data-src="https://www.tunivisions.link/uploads/avatar/<?php echo $CU->avatar ?>"></div>
-                            </div>
-
-                            <div class="text_">
-                                <div class="text_box">
-                                    <p><strong><?php echo $CU->name ?></strong></p>
-                                    <p>Coordinateur National University Chapter</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                     <li>
-                        <div class="content_">
-                            <div class="img-box">
-                                <div class=" img_ b-lazy" data-src="https://www.tunivisions.link/uploads/avatar/<?php echo $CH->avatar ?>"></div>
-                            </div>
-
-                            <div class="text_">
-                                <div class="text_box">
-                                    <p><strong><?php echo $CH->name ?></strong></p>
-                                    <p>Coordinateur National High school Chapter</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                <div class="row" style="text-align: center" >
+                    <div class="col-md-12">
+                        <img class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $EM->avatar ?>" >
+                        <b style="color: white"><br><?php echo $EM->name ?></b>
+                        <small style="color: white" ><br>Manager executif<br><br></small>
+                    </div>
+                    <div class="col-md-4">    
+                        <img class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $CA->avatar ?>" >
+                                <b style="color: white" ><br><?php echo $CA->name ?></b>
+                                <small style="color: white"><br>Coordinateur national Alumni</small>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $CU->avatar ?>" >
+                                <b style="color: white"><br><?php echo $CU->name ?></b>
+                                <small style="color: white"><br>Coordinateur national University</small>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $CH->avatar ?>" >
+                                <b style="color: white"><br><?php echo $CH->name ?></b>
+                                <small style="color: white"><br>Coordinateur national High School</small>
+                    </div>
                       
-                </ul>
+             
             </div>
         </div>
 
@@ -185,39 +150,76 @@ Serving as a platform for bright young minds to meet so that the nations can uni
           <div class="team_bottom">
             <div class="inner_">
                 <div class="subtitle_">
-                    <h2>The Team</h2>
+                    <h2>Equipe Alumni</h2>
                 </div>
 
-                <div class="team_slider">
-                      <div class="swiper-container">
-                        <div class="swiper-wrapper">
+                
+                             <div class="row">
                               <?php foreach ($CA->managers as $key ) {?> 
-                              	
-                              <div class="swiper-slide team_slide">
-                               <a data-src="https://arabyouthcenter.org/en/team/41" href="javascript:;" data-fancybox data-type="ajax" class="link_">
-                                 <div class="content_">
-                                     
-                                      <div class="img-box">
-                                          <div class="img_ b-lazy" data-src="https://www.tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>"></div>
-                                      </div>
-                                      <div class="text_">
-                                          <div class="text_box">
-                                              <p class="txt_nme"><strong><?php echo $key->name ?></strong></p>
-                                              <p class="txt_des">Manager <?php echo $key->cellule ?></p>
-                                          </div>
-                                      </div>
-                                 </div>
-                               </a>
-                            </div>
-                              <?php } ?>                         
+                                <div class="col-md-3" style="text-align : center" >
+                                    <img  class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>">
+                                     <p ><strong><?php echo $key->name ?></strong></p>
+                                     <small >Manager <?php echo $key->cellule ?></small>
+                                </div>
+                              <?php } ?>     
+                              </div>                    
                              
                                                     </div>
                     </div>
-                </div>
-            </div>
-          </div>
+
       </div>
-</section>  <section class="page-section join_sec" id="join-the-team">
+
+            <div class="container">
+          <div class="team_bottom">
+            <div class="inner_">
+                <div class="subtitle_">
+                    <h2>Equipe University</h2>
+                </div>
+
+                
+                             <div class="row">
+                              <?php foreach ($CU->managers as $key ) {?> 
+                                <div class="col-md-3" style="text-align : center" >
+                                    <img  class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>">
+                                     <p ><strong><?php echo $key->name ?></strong></p>
+                                     <small >Manager <?php echo $key->cellule ?></small>
+                                </div>
+                              <?php } ?>     
+                              </div>                    
+                             
+                                                    </div>
+                    </div>
+
+      </div>
+
+
+            <div class="container">
+          <div class="team_bottom">
+            <div class="inner_">
+                <div class="subtitle_">
+                    <h2>Equipe High School</h2>
+                </div>
+
+                
+                             <div class="row">
+                              <?php foreach ($CH->managers as $key ) {?> 
+                                <div class="col-md-3" style="text-align : center" >
+                                    <img  class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>">
+                                     <p ><strong><?php echo $key->name ?></strong></p>
+                                     <small >Manager <?php echo $key->cellule ?></small>
+                                </div>
+                              <?php } ?>     
+                              </div>                    
+                             
+                                                    </div>
+                    </div>
+
+      </div>
+
+
+</section>  
+
+<section class="page-section join_sec" id="join-the-team">
     <div class="inner_">
         <div class="content_wrapper">
             <div class="icon_">
@@ -229,16 +231,16 @@ Serving as a platform for bright young minds to meet so that the nations can uni
             <div class="text_">
 
                 <div class="subtitle_ white_">
-                    <h2>JOIN THE TEAM</h2>
+                    <h2>Rejoins la fondation</h2>
                 </div>
 
 
                 <div class="text_box">
-                    <p>We are always looking for new talent that wants to make a difference. We are always looking for new talent that wants to make a difference.</p>
+                    <p>Nous sommes toujours à la recherche de nouveaux talents qui veulent faire la différence.</p>
                 </div>
             </div>
 
-            <a href="https://www.linkedin.com/company/arabyouthcenter/" target="_blank" class="read_more white_" title="Read More"><span>Read More</span></a>
+            <a href="https://www.linkedin.com/company/arabyouthcenter/" target="_blank" class="read_more white_" title="Read More"><span>Lire la suite</span></a>
 
         </div>
 

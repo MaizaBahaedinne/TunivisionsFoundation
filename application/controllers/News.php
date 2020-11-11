@@ -58,7 +58,7 @@ public function __construct()
 						$contentAr = $this->input->post('contentAr');
 						$titreEn = $this->input->post('titreEn');
 						$contentEn = $this->input->post('contentEn');
-				        $file_name = 'avatar__'.$name.'_'.$_FILES['media']['name'];
+				        $file_name = '_'.$_FILES['media']['name'];
 		                $file_tmp = $_FILES['media']['tmp_name'];
 		                
 		                $file_destination = 'uploads/news/' . $file_name;
@@ -81,6 +81,7 @@ public function __construct()
 				           {
 
 				           		$this->session->set_flashdata('success', 'l\'actualité a été ajouté avec succées');
+				           		redirect('/News/new/'.$resualt)  ;
 				           }
 				            else
 				            {
@@ -88,7 +89,7 @@ public function __construct()
 				            } 
 				    }
 				          
-				          redirect('/News/new/'.$resualt)  ;
+				         
 	}
 
 
