@@ -4,14 +4,14 @@
     <div class="abt-nav">
       <ul class="abt-nav-list">
         <li class="abt-nav-items ">
-          <a data-href="#who-we-are" href="about.html#who-we-are" class="link_ ">
+          <a data-href="#howweare" href="about.html#howweare" class="link_ ">
             <div class="img_box">
               <div class="img_ b-lazy" data-src="https://arabyouthcenter.org/assets/frontend/dist/images/flat_nav_1.svg"></div>
             </div>
 
             <div class="title">
               <span>
-                Who We Are?
+                Qui nous Sommes?
               </span>
             </div>
           </a></li>
@@ -22,7 +22,7 @@
             </div>
             <div class="title">
               <span>
-                Our Vision &amp; Mission
+                Nos Visions &amp; Missions
               </span>
             </div>
           </a>
@@ -34,7 +34,7 @@
             </div>
             <div class="title">
               <span>
-                Our Values
+                Nos Valeurs
               </span>
             </div>
           </a></li>
@@ -56,7 +56,7 @@
             </div>
             <div class="title">
               <span>
-                Partners
+                Les Partenaires
               </span>
             </div>
           </a></li>
@@ -80,7 +80,7 @@
 
           <div class="content-wrapper " id="who-we-are">
             <div class="subtitle_">
-              <h2>Who we are?</h2>
+              <h2>Qui nous sommes?</h2>
             </div>
             <div class="text_box">
               <p>The Arab Youth Center (AYC) was established to realize the vision of <strong>His Highness Sheikh Mansour bin Zayed Al Nahyan, Deputy Prime Minister and Minister of Presidential Affairs</strong>, to empower young Arabs and address their needs.</p>
@@ -149,7 +149,7 @@
             </div>
             <div class="content_box">
               <div class="subtitle_">
-                <h2>Our Mission</h2>
+                <h2>Nos Missions</h2>
               </div>
               <div class="content_">
                 <div class="text_box">
@@ -274,7 +274,7 @@
             </div>
             <div class="content_box">
               <div class="subtitle_2">
-                <h3>Organizing Events</h3>
+                <h3>Organisation d'événements</h3>
               </div>
               <div class="content_2">
                 <div class="text_box">
@@ -332,7 +332,7 @@
             </div>
             <div class="content_box">
               <div class="subtitle_2">
-                <h3>Research and Development</h3>
+                <h3>Recherche et développement</h3>
               </div>
               <div class="content_2">
                 <div class="text_box">
@@ -371,7 +371,7 @@
             </div>
             <div class="content_box">
               <div class="subtitle_2">
-                <h3>Projects &amp; Initiatives</h3>
+                <h3>Projets &amp; Initiatives</h3>
               </div>
               <div class="content_2">
                 <div class="text_box">
