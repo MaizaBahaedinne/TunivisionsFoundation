@@ -1,4 +1,4 @@
-<form method="post">
+<form  method="post">
 		<table width="600" align="center" border="1" cellspacing="5" cellpadding="5">
 	<tr>
 		<td colspan="2"><?php echo @$error; ?></td>

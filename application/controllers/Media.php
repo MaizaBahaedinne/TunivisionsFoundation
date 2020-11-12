@@ -27,6 +27,8 @@ public function __construct()
        
         $data["newsRecords"]=$this->news_model->newsListing();
       $this->loadViews("media/view", $this->global, $data , NULL); 
+
+      
     }
 
 

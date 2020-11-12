@@ -16,7 +16,7 @@ public function __construct()
 
 
 
-	public function index()
+	public function save()
 	{
 		
 		if($this->input->post('abonner'))
@@ -41,7 +41,11 @@ public function __construct()
 		}			
 				
 		}
-	$this->load->view('Newletter/view',@$data);	
+		
+	$this->load->view('media/view',@$data);
+	
+	
+
 	}
 }
 ?>
