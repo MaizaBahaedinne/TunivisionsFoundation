@@ -12,7 +12,7 @@
 
             <div class="title">
               <span>
-                News
+                Nouvelles
               </span>
             </div>
           </a></li>
@@ -23,7 +23,7 @@
             </div>
             <div class="title">
               <span>
-                  Gallery
+                  Galerie
               </span>
             </div>
           </a>
@@ -35,7 +35,7 @@
             </div>
             <div class="title">
               <span>
-                Newsletter
+                Infolettre
               </span>
             </div>
           </a></li>
@@ -51,7 +51,7 @@
           
             <div class="news_container">
                 <div class="subtitle_">
-                    <h2>News</h2>
+                    <h2>Nouvelles</h2>
                 </div>
 
                 <div class="news_wrapper">
@@ -92,7 +92,7 @@
 
                         <div id="loadMore" class="nav_box" data-redirect="https://arabyouthcenter.org/en/media?page=2">
                           <a href="#" class="read_more" title="Read More">
-                              <span>More News</span>
+                              <span>Voir plus</span>
                           </a> 
                         </div>
                                             </div>
@@ -113,7 +113,7 @@
       <div class="mission_vision_content_wrapper " id="gallery">
         <div class="gallery_inner">
             <div class="subtitle_ white_">
-                <h2>Gallery</h2>
+                <h2>Galerie</h2>
             </div>
 
             <div class="row">
@@ -219,11 +219,11 @@
                     </div>
                     
                     <div class="subtitle_">
-                        <h2>Newsletter</h2>
+                        <h2>Infolettre</h2>
                     </div>
 
                     <div class="text_box">
-                        <p>For updates on our current events, on youth accomplishments and new initiatives</p>
+                        <p>Pour des mises à jour sur nos événements actuels, sur les réalisations des jeunes et les nouvelles initiatives</p>
                     </div>
 
                     <div class="form_inner">
@@ -232,32 +232,59 @@
 <style type="text/css">
 	/*#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }*/
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */    
+  /*id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"*/
 </style>
 <div id="mc_embed_signup">
-	<form action="https://arabyouthcenter.us19.list-manage.com/subscribe/post?u=200eff7a676a14e91f985c515&amp;id=ec72026ad1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-v3" target="_blank" novalidate>
+
+	<form action="<?= base_url('Newletter/save') ?>" method="post"class="validate form-v3" target="_blank" novalidate>
 		<div id="mc_embed_signup_scroll" class="input_box">
 			
 			
 			<div class="mc-field-group input-field">
-				<label for="mce-EMAIL">Email address <span class="asterisk">*</span></label>
-				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+				<label for="mce-EMAIL">Email <span class="asterisk">*</span></label>
+				<input type="email" value="" name="email" class="required email" id="mce-EMAIL">
 			</div>
 			<div class="mc-field-group input-field">
-				<label for="mce-FNAME">First name<span class="asterisk">*</span></label>
-				<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+				<label for="mce-FNAME">Prénom<span class="asterisk">*</span></label>
+				<input type="text" value="" name="prenom" class="required" id="prenom">
 			</div>
 			<div class="mc-field-group input-field">
-				<label for="mce-LNAME">Last name</label>
-				<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+				<label for="mce-LNAME">Nom</label>
+				<input type="text" value="" name="nom" class="" id="nom">
 			</div>
 			<div class="mc-field-group size1of2 input-field">
-				<label style="width: 100%;" for="mce-MMERGE5" class="normal_">Age<span class="asterisk">*</span>
-				<input type="number" name="MMERGE5" maxlength="3" class="required" value="" id="mce-MMERGE5">
+				<label style="width: 100%;" for="mce-MMERGE5" >Date de naissance<span class="asterisk">*</span>
+				<input type="date" name="ddn" class="required" value="" id="ddn">
 			</div>
-			<div class="mc-field-group input-field">
-				<label for="mce-MMERGE8">Nationality<span class="asterisk">*</span></label>
-				<input type="text" value="" name="MMERGE8" class="required" id="mce-MMERGE8">
+			<div class="mc-field-group input-field" style="border-bottom: 1px solid black">
+				<label for="mce-MMERGE8">Région<span class="asterisk">*</span></label><br>
+				<select  class="border-bottom-0" name="gouvernorat" id="gouvernorat" >
+                                        <option value="Ariana">Ariana</option>
+                                        <option value="Béja">Béja</option>
+                                        <option value="Ben Arous">Ben Arous</option>
+                                        <option value="Bizerte">Bizerte</option>
+                                        <option value="Gabes">Gabès</option>
+                                        <option value="Gafsa">Gafsa</option>
+                                        <option value="Jendouba">Jendouba</option>
+                                        <option value="Kairouan">Kairouan</option>
+                                        <option value="Kasserine">Kasserine</option>
+                                        <option value="Kébili">Kébili</option>
+                                        <option value="Kef">Kef</option>
+                                        <option value="Mahdia">Mahdia</option>
+                                        <option value="Manouba">Manouba</option>
+                                        <option value="Médenine">Médenine</option>
+                                        <option value="Monastir">Monastir</option>
+                                        <option value="Nabeul">Nabeul</option>
+                                        <option value="Sfax">Sfax</option>
+                                        <option value="Sidi Bouzid">Sidi Bouzid</option>
+                                        <option value="Siliana">Siliana</option>
+                                        <option value="Sousse">Sousse</option>
+                                        <option value="Tataouine">Tataouine</option>
+                                        <option value="Tozeur">Tozeur</option>
+                                        <option value="Tunis">Tunis</option>
+                                        <option value="Zaghouan">Zaghouan</option>
+                                     </select>
 			</div>
 			<div id="mce-responses" class="clear">
 				<div class="response" id="mce-error-response" style="display:none"></div>
@@ -265,8 +292,9 @@
 			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			<div style="position: absolute; left: 0; pointer-events: none; opacity: 0" aria-hidden="true"><input type="text" name="b_200eff7a676a14e91f985c515_ec72026ad1" tabindex="-1" value=""></div>
 			<div class="clear btn_wrapper">
-				<!-- <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="read_more"> -->
-				<button type="submit" class="read_more "  id="mc-embedded-subscribe" ><span>Subscribe</span></button>
+      <span class="read_more" id="mc-embedded-subscribe"></span>
+				<input class="read_more" type="submit" value="Inscription" name="abonner" id="mc-embedded-subscribe"/> 
+			<!--	<input type="submit" class="read_more "  id="abonner" name="abonner" value="Iscription"/>-->
 			</div>
 		</div>
 </form>
