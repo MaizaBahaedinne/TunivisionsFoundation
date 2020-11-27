@@ -120,7 +120,9 @@
 	<header id="header">
     <nav class="navbar navbar-light">
         <div class="barnd_box left_">
-            <a  href="<?php echo base_url() ?>" title=""><img width="250px" src="<?php echo base_url() ?>assets/frontend/dist/images/logorouge.png" alt="" ></a>
+
+            <a  href="<?php echo base_url() ?>" title="">
+                <img width="180px" style="padding-top: 0.25cm " src="<?php echo base_url() ?>assets/frontend/dist/images/logorouge.png" alt="" ></a>
         </div>
 
         <div class="nav_box">
