@@ -30,6 +30,7 @@ public function __construct()
 	 */
 	public function index()
 	{
+		$this->global['pageTitle'] = '';
 		$data["newsRecords"]=$this->news_model->newsListing();
 		$this->loadViews("index", $this->global, $data , NULL); 
 	}

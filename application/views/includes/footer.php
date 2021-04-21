@@ -1,424 +1,272 @@
 
+        <!-- Footer Section Start -->
+        <footer class="footer--section">
+            <!-- Footer Widgets Start -->
+            <div class="footer--widgets pt--70 pb--20 bg-lightdark" data-bg-img="<?php echo base_url() ?>assets/img/footer-<?php echo base_url() ?>assets/img/footer-widgets-bg.png">
+                <div class="container">
+                    <div class="row AdjustRow">
+                        <div class="col-md-3 col-xs-6 col-xxs-12 pb--60">
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">A propos</h2>
 
-    <div id="welcome-box"  class="welcome-popup"  style="display: none ">
-    
-		    <h3>Apply now to the Arab Youth Hackathon</h3>
-		<p>Submit your innovative ideas and solutions for challenges in times of crisis</p>
-	    
-    <div class="loc_widget">
+                                <!-- Text Widget Start -->
+                                <div class="text--widget">
+                                    Association Tunivisions , 32 B (2eme étage) centre Millenium route de la Marsa, Tunisie.
+                                </div>
+                                <!-- Text Widget End -->
+                            </div>
+                            <!-- Widget End -->
 
-        <a target="_blank" href="en/article/our-initiative/arab-youth-hackathon.html" class="item_" title="Hackathon">
-                          <div class="icon_">
-                             <img src="<?php echo base_url() ?>assets/frontend/dist/images/click.svg">
-                          </div>
-                          <span class="text_">Join the Hackathon</span>
-                      </a>
-                    
-                                    
-              </div>
-    
-    
-</div>
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Abonnez-vous à notre newsletter</h2>
 
-	
-	
-	<footer>
-  <div class="container">
-    <div class="footer-text text-center">
-        <div class="footer_links">
-        <li>
-          <a href="en/faq.html" class="link_">FAQ</a>
-        </li>
-        <li>
-           <a href="en/team.html#join-the-team" class="link_">Careers</a>
-        </li>
-        <li>
-          <a href="en/about.html#who-we-are" class="link_">About</a>
-        </li>
-        <li> <a href="index.html#contact" class="link_">Contact</a></li>
-      </div>
-      <span>All rights reserved © Tunivisions Foundation</span>
+                                <!-- Newsletter Widget Start -->
+                                <div class="newsletter--widget style--1" data-form="validate">
+                                    <form action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&amp;id=f4e0e93d1d" method="post" name="mc-embedded-subscribe-form" target="_blank">
+                                        <div class="input-group">
+                                            <input type="email" name="EMAIL" placeholder="Enter your emil address" class="form-control" autocomplete="off" required>
+
+                                            <div class="input-group-btn">
+                                                <button type="submit" class="btn-link"><i class="fa fa-send-o"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Newsletter Widget End -->
+                            </div>
+                            <!-- Widget End -->
+                        </div>
+
+                        <div class="col-md-3 col-xs-6 col-xxs-12 pb--60">
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Nouvelles récentes</h2>
+
+                                <!-- Recent Posts Widget Start -->
+                                <div class="recent-posts--widget">
+                                    <ul class="nav">
+                                        <li>
+                                            <p class="date fw--300">
+                                                <a href="#"><i class="fa mr--8 fa-file-text-o"></i>19 Jan 2017</a>
+                                            </p>
+                                            <p class="title fw--700">
+                                                <a href="blog-details.html">I look at you and see the rest of my life in front</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="date fw--300">
+                                                <a href="#"><i class="fa mr--8 fa-file-text-o"></i>19 Jan 2017</a>
+                                            </p>
+                                            <p class="title fw--700">
+                                                <a href="blog-details.html">If I know what love is, it is because of you</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="date fw--300">
+                                                <a href="#"><i class="fa mr--8 fa-file-text-o"></i>19 Jan 2017</a>
+                                            </p>
+                                            <p class="title fw--700">
+                                                <a href="blog-details.html">At the touch of love everyone becomes a poet</a>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Recent Posts Widget End -->
+                            </div>
+                            <!-- Widget End -->
+
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Tags</h2>
+
+                                <!-- Tags Widget Start -->
+                                <div class="tags--widget">
+                                    <ul class="nav">
+                                        <li><a href="#">BuddyPress</a></li>
+                                        <li><a href="#">HTML</a></li>
+                                        <li><a href="#">Music</a></li>
+                                        <li><a href="#">Technology</a></li>
+                                        <li><a href="#">Movies</a></li>
+                                        <li><a href="#">Photography</a></li>
+                                        <li><a href="#">WordPress</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Tags Widget End -->
+                            </div>
+                            <!-- Widget End -->
+                        </div>
+
+                        <div class="col-md-3 col-xs-6 col-xxs-12 pb--60">
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Some of Catagories</h2>
+
+                                <!-- Nav Widget Start -->
+                                <div class="nav--widget">
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-folder-o"></i>
+                                                <span class="text">Social Media</span>
+                                                <span class="count">(26)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-folder-o"></i>
+                                                <span class="text">Business Studies</span>
+                                                <span class="count">(06)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-folder-o"></i>
+                                                <span class="text">Technology</span>
+                                                <span class="count">(34)</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Nav Widget End -->
+                            </div>
+                            <!-- Widget End -->
+
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">From Archives</h2>
+
+                                <!-- Nav Widget Start -->
+                                <div class="nav--widget">
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-calendar-o"></i>
+                                                <span class="text">Jan - July 2017</span>
+                                                <span class="count">(86)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-calendar-o"></i>
+                                                <span class="text">Jan - Dce 2016</span>
+                                                <span class="count">(328)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-calendar-o"></i>
+                                                <span class="text">Jan - Dec 2015</span>
+                                                <span class="count">(427)</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Nav Widget End -->
+                            </div>
+                            <!-- Widget End -->
+                        </div>
+
+                        <div class="col-md-3 col-xs-6 col-xxs-12 pb--60">
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Forums</h2>
+
+                                <!-- Links Widget Start -->
+                                <div class="links--widget">
+                                    <ul class="nav">
+                                        <li><a href="sub-forums.html">User Interface Design</a></li>
+                                        <li><a href="sub-forums.html">Front-End Engineering</a></li>
+                                        <li><a href="sub-forums.html">Web Development</a></li>
+                                        <li><a href="sub-forums.html">Social Media Marketing</a></li>
+                                        <li><a href="sub-forums.html">Content Marketing</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Links Widget End -->
+                            </div>
+                            <!-- Widget End -->
+
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Useful Links</h2>
+
+                                <!-- Links Widget Start -->
+                                <div class="links--widget">
+                                    <ul class="nav">
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Membership Levels</a></li>
+                                        <li><a href="#">Shop</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Links Widget End -->
+                            </div>
+                            <!-- Widget End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Widgets End -->
+
+            <!-- Footer Extra Start -->
+            <div class="footer--extra bg-darker pt--30 pb--40 text-center">
+                <div class="container">
+                    <!-- Widget Start -->
+                    <div class="widget">
+                        <h2 class="h4 fw--700 widget--title">Recent Active Members</h2>
+
+                        <!-- Recent Active Members Widget Start -->
+                        <div class="recent-active-members--widget style--2">
+                            <div class="owl-carousel" data-owl-items="12" data-owl-nav="true" data-owl-speed="1200" data-owl-responsive='{"0": {"items": "3"}, "481": {"items": "6"}, "768": {"items": "8"}, "992": {"items": "12"}}'>
+                                <div class="img">
+                                    <a href="member-activity-personal.html"><img src="<?php echo base_url() ?>assets/img/widgets-<?php echo base_url() ?>assets/img/recent-active-members/01.jpg" alt=""></a>
+                                </div>
+
+                                <div class="img">
+                                    <a href="member-activity-personal.html"><img src="<?php echo base_url() ?>assets/img/widgets-<?php echo base_url() ?>assets/img/recent-active-members/02.jpg" alt=""></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Recent Active Members Widget End -->
+                    </div>
+                    <!-- Widget End -->
+                </div>
+            </div>
+            <!-- Footer Extra End -->
+
+            <!-- Footer Copyright Start -->
+            <div class="footer--copyright pt--30 pb--30 bg-darkest">
+                <div class="container">
+                    <div class="text fw--500 fs--14 text-center">
+                        <p>Copyright &copy; Tunivisions.Link. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Copyright End -->
+        </footer>
+        <!-- Footer Section End -->
     </div>
-  </div>
-</footer>	    
-		<!-- Scripts JSF-->
-<script>  
-    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);    
-    if (window.document.documentMode || isSafari) {
-        var blz_elemt = document.getElementsByClassName('b-lazy');
-        for (var i = 0; i < blz_elemt.length; ++i) {
-            var src_ = blz_elemt[i].dataset,
-            src_data = JSON.parse(JSON.stringify(src_));
-            for (var key in src_data) {
-                var file_path = src_data[key];                
-                if(file_path.split('.').pop() == 'webp') {
-                    new_file = file_path.substr(0, file_path.lastIndexOf(".")) + ".jpg";                    
-                    blz_elemt[i].dataset[key] = new_file;
-                }
-            }                        
-        }
-    }
-</script>
-<script src="<?php echo base_url() ?>assets/frontend/dist/scripts/lib/modernizr.min.js"></script>  
-<script src="<?php echo base_url() ?>assets/frontend/dist/scripts/lib/jquery-3.4.1.min.js"></script>
+    <!-- Wrapper End -->
 
-<script src="<?php echo base_url() ?>assets/frontend/dist/scripts/min/home_plugins.js"></script>
-<script src="<?php echo base_url() ?>assets/frontend/dist/scripts/min/home.js"></script> 
-<script src="<?php echo base_url() ?>assets/frontend/dist/scripts/min/page.js"></script> 
+    <!-- Back To Top Button Start -->
+    <div id="backToTop">
+        <a href="#" class="btn"><i class="fa fa-caret-up"></i></a>
+    </div>
+    <!-- Back To Top Button End -->
 
-<script src="../cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../www.google.com/recaptcha/api57b8.js?onload=myCaptchaCallBack&amp;render=explicit&amp;hl=en" async defer></script>
+    <!-- ==== Plugins Bundle ==== -->
+    <script src="<?php echo base_url() ?>assets/js/plugins.min.js"></script>
 
-<script src="<?php echo base_url() ?>assets/frontend/dist/scripts/min/page_plugins.js"></script>
+    <!-- ==== Color Switcher Plugin ==== -->
+    <script src="<?php echo base_url() ?>assets/js/color-switcher.min.js"></script>
 
-<script>
-	if($.validator){
-		
-		$.validator.addMethod( "emailSpecialChar", function( value, element ) {
-		return this.optional( element ) || !/[~`!#$%\^&*+=\-\[\]\\';\/{}|\\":<>\?]/g.test( value );        
-		 }, "Special characters(#,$,% etc.) are not allowed." );
-		 
-		$.validator.addMethod( "max_500", function( value, element ) { 
-			var wordsCount = 0;
-			value = value.replace('.',' ');
-			value = value.replace('-',' ');
-			value = value.replace('_',' ');
-			var arr = value.split(' ');
-			  $(arr).each(function(i,v){
-					if(v){
-						wordsCount++;
-					}
-				});
-			return !(wordsCount >500)
-		 }, "Max 500 words allowed" );
-
-		 $.validator.addMethod( "myEmail", function( value, element ) {
-			return this.optional( element ) || /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test( value );
-		}, "Invalid Email"); 
-		
-		$.validator.addMethod( "alphanumeric", function( value, element ) {
-			//return this.optional( element ) || !/[~`!#$@%\^&*+=\-\[\]\\';,\/{}|\\":<>\?]/g.test( value );
-			return this.optional( element ) || /^[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z0-9_. -]*$/.test( value );
-		}, "Special characters(#,$,% etc.) are not allowed." );
-
-		$.validator.addMethod( "alphanumericMessageBox", function( value, element ) {
-			return this.optional( element ) || /^[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z0-9,_.\n -]*$/.test( value );
-		}, "Special characters(#,$,% etc.) are not allowed." );
-
-		$.validator.addMethod( "integer", function( value, element ) {
-			return this.optional( element ) || /^-?\d+$/.test( value );
-		}, "Only numbers are allowed" );
-
-		$.validator.addMethod( "dateFormat", function( value, element ) {
-			var pattern = /^[A-Za-z]{3} \d{2}, \d{4}$/;
-			return this.optional( element ) || pattern.test(value)
-		}, "Invalid date" );
-
-		$.validator.addMethod( "noSpace", function( value, element ) {
-
-			return !value.startsWith(" ");
-		}, "Space not allowed");
-		
-	}
-</script><script>
-var recaptchaArr = [];
-var myCaptchaCallBack = function() { 
-	  $('.recaptcha').each(function(){
-		var id = $(this).attr('id');
-			if(id){
-				var tmp = grecaptcha.render( $(this).attr('id'), {
-				  'sitekey' : '6LduzggUAAAAAEFpHflbMn2MhApiYPpvvEmaqp4D',
-				  'theme' : 'light',
-				  'lang':'en'
-				});
-				recaptchaArr.push({ID:$(this).attr('id'),obj:tmp});
-			}
-	  })
-		
-	};
-
-function sendAjax(url,type,dataToSend,func,loaderDivID){
-		if(loaderDivID){ $(loaderDivID).addClass('show'); }
-		$.ajax({
-			url:url,
-			type:type,
-			async:true,
-			data:dataToSend,
-			dataType:'json',
-			statusCode: {
-				302:function(){ console.log('Forbidden. Access Restricted'); },
-				403:function(){ console.log('Forbidden. Access Restricted','403'); },
-				404:function(){ console.log('Page not found','404'); },
-				500:function(){ console.log('Internal Server Error','500'); }
-			},
-			error: function(res) {
-				console.log(res.responseText);
-			}
-		}).done(function(responseData){							
-			func(responseData);	
-								
-		}).always(function(){
-			if(loaderDivID){$(loaderDivID).removeClass('show');}			
-		});
- }
-</script>	
-<script>
-     function CaptchaCallback() {
-     $('.recaptcha').each(function () {
-       grecaptcha.render(this, {
-         'sitekey': '6LduzggUAAAAAEFpHflbMn2MhApiYPpvvEmaqp4D',
-         'lang': 'en',
-       });
-     });
- 
-   };
- 
-   $(document).ready(function(){
-     $('select').formSelect();
-   });
-         
-   </script>
- 
- <script>
-     $(document).ready(function() {
-         $('body').addClass('loaded');
-     });
- 
- </script>
- 
- 
- <script>
-     var bannerSwiper = new Swiper('.banner-slider .swiper-container', {
-     spaceBetween: 0,
-     centeredSlides: true,
-     //loop:true,
-     effect: 'fade',
-     autoplay: {
-       delay: 6000,
-         disableOnInteraction: false,
-     }, 
-       navigation: {
-         nextEl: '.banner-next',
-         prevEl: '.banner-prev',
-       },
-       on: {
-                 init: function () {
-                     window.bLazy.revalidate();
-                 },
-             }
- 
-       });
- 
-     bannerSwiper.on('slideChange', function () {
-       window.bLazy.revalidate();
-    });
- 
-    var newsSlider = new Swiper('.news_wrapper .swiper-container', {
-       slidesPerView: 4,
-       slidesPerColumn: 0,
-       spaceBetween: 0,
-       navigation: {
-         nextEl: '.news-navigation .news-next',
-         prevEl: '.news-navigation .news-prev',
-       },
-       pagination: {
-         el: '.swiper-pagination',
-         clickable: true,
-       },
-       breakpoints: {
-         1024: {
-           slidesPerView: 2,
-           slidesPerColumn: 1,
-           spaceBetween: 0,
-         }
-       },
-       on: {
-             init: function () {
-                 window.bLazy.revalidate();
-             },
-         }
-     });
-     newsSlider.on('slideChange', function () {
-       window.bLazy.revalidate();
-    });
- 
-   </script>
-
-   <script type="text/javascript">
-      $('.phone').mask('0000000000000000');
-      $.validator.addMethod( "alphanumeric", function( value, element ) {
-        return this.optional( element ) || !/[~`!#$%\^@&*+=\[\]\\';,\/{}|\\":<>\?]/g.test( value );
-      }, "messages.enter_no_special_char"  );
-      
-      $.validator.addMethod( "textarea", function( value, element ) {
-        return this.optional( element ) || /^[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z0-9\n,_. -]*$/.test( value );
-      }, "messages.enter_no_special_char"  );
-      
-      $.validator.addMethod( "textbox", function( value, element ) {
-        return this.optional( element ) || !/[~`!#$%\^&*+=\[\]\\';,\/{}|\\":<>\?]/g.test( value );
-      }, "messages.enter_no_special_char"  );
-      
-      $.validator.addMethod( "freetext", function( value, element ) {
-        return this.optional( element ) || !/[~`!$%\^&*+=\[\]\\';\/{}|\\"<>\?]/g.test( value );
-      }, "messages.enter_no_special_char"  );
-      
-      $.validator.addMethod( "integer", function( value, element ) {
-        return this.optional( element ) || /^-?\d+$/.test( value );
-      }, "messages.please_enter_number" );
-
-      $.validator.addMethod( "myemail", function( value, element ) {
-      return this.optional( element ) || /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test( value );
-      }, "Invalid Email"); 
-
-
-     $("#contactSubmitBtn").click(function() {
-        $(".contactFormSubmit").submit();
-     });
-
-     $("#contact_us_form").validate({
-        errorPlacement: function(error, element) {
-          error.insertBefore(element);
-        }, 
-        ignore: '',
-        rules: {
-          "hiddenRecaptcha": {
-            required: function () {
-              var gotResponse = haveRecaptchaResponse('contactCaptcha');
-              if(!gotResponse) {
-                  $('#contactCaptcha').find('iframe').addClass('error-border');
-              } else {
-                  $('#contactCaptcha').find('iframe').removeClass('error-border');
-              }
-              return !gotResponse; 
-            }
-          },
-          'contact_name': {
-            required:true,
-            alphanumeric:true
-          },
-          'contact_email': {
-            required:true,
-            myemail:true
-          },
-          'contact_country': {
-            required:true,
-            alphanumeric:true
-          },
-          'contact_inquiry_type': {
-            required:true,
-            alphanumeric:true
-          },
-          'contact_message': {
-            required:true,
-            textarea:true
-          },
-
-        },
-        submitHandler: function(form) {
-          var url = $(form).attr('action');
-          console.log(url);
-          var data = $(form).serializeArray();
-
-          $(".message_box").html();
-
-          $(".loader_form").show();
-
-          sendAjax(url, 'post', data, function(res){
-            resetRecaptcha();
-            $(".message_box").html(res.message);
-            
-            $(".loader_form").hide();
-
-            $('input[name="contact_name"]').val('');
-            $('input[name="contact_email"]').val('');
-            $('input[name="contact_message"]').val('');
-            $('select option:first').prop('selected', true);
-            // $('select[name="contact_inquiry_type"]').material_select();
-            // $('select[name="contact_country"]').val('');
-            // $('select[name="contact_inquiry_type"]').val('');
-
-          }, '');
-
-          return false;
-        },
-        messages: {            
-          "hiddenRecaptcha" : {
-            required : "This field is required",
-          }, 
-        },
-     });
-   </script>
-<script type="text/javascript">
-    $(document).ready(function() {
-       // $.fancybox("#welcome-box"); $.fancybox("#welcome-box");
-         //$("#hidden_link").fancybox().trigger('click');
-        // $.fancybox.open({
-        //     src : "#welcome-box"
-        // });
-    });
-</script>
-
-    <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
-<script type="text/javascript">
-/* curator-feed-default-feed-layout */
-(function(){
-var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
-i.src = "../cdn.curator.io/published/561847ee-9e03-4e79-bf0e-9eb7ad674d79.js";
-e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-})();
-</script>	
-
-
-<script>
-            $(document).ready(function(){
-                
-              // Translated
-                $('.dropify-fr').dropify({
-                    messages: {
-                        default: 'Glissez-déposez un fichier ici ou cliquez',
-                        replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
-                        remove:  'Supprimer',
-                        error:   'Désolé, le fichier trop volumineux'
-                    }
-                });
-
-                // Used events
-                var drEvent = $('#input-file-events').dropify();
-
-                drEvent.on('dropify.beforeClear', function(event, element){
-                    return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
-                });
-
-                drEvent.on('dropify.afterClear', function(event, element){
-                    alert('File deleted');
-                });
-
-                drEvent.on('dropify.errors', function(event, element){
-                    console.log('Has Errors');
-                });
-
-
-
-                
-
-
-            });
-    </script>
-
-
-    <script>
-    tinymce.init({
-      selector: '#TinyMCE',
-      plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
-      toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
-      toolbar_mode: 'floating',
-      tinycomments_mode: 'embedded',
-      tinycomments_author: 'Author name',
-    });
-  </script>
-
+    <!-- ==== Main Script ==== -->
+    <script src="<?php echo base_url() ?>assets/js/main.js"></script>
 
 </body>
 
-<!-- Mirrored from arabyouthcenter.org/en by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Oct 2020 19:59:50 GMT -->
+<!-- Mirrored from themelooks.us/demo/socifly/html/home-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Apr 2021 13:35:39 GMT -->
 </html>

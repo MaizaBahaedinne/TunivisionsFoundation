@@ -18,6 +18,8 @@ class About extends BaseController{
 
 	public function index()
 	{
+
+		$this->global['pageTitle'] = 'A Propos | ';
 		$data["newsRecords"]=$this->howweare_model->howweareInfo();
 		$this->loadViews("about/view", $this->global, $data , NULL); 
 	}
