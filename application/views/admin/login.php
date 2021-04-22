@@ -15,8 +15,8 @@
                 <div class="contact-form-wrapper">
                   <div class="input_bg_body ">
                       <div class="input-field ">
-                          <input  type="email" class="input_feild " id="email" required>
                           <label class="feild_label"  for="name_id">e-mail</label>
+                          <input  type="email" class="form-control " id="email" required> 
                       </div>
                   </div>
                 </div>
@@ -25,14 +25,15 @@
 
                 <div class="contact-form-wrapper">
                   <div class="input_bg_body ">
-                      <div class="input-field ">
-                          <input  type="password" class="input_feild " id="password" required>
+                      <div class="input-field "> 
                           <label class="feild_label"  for="name_id">mot de passe</label>
+                          <input  type="password" class="form-control " id="password" required>
+                         
                       </div>
                   </div>
                 </div>
             <br><br>
-                 <button type="submit" id="loginbtn" class="btn btn-block btn-primary" >Se connecter</button>
+                 <input type="submit" id="loginbtn" class="btn btn-block btn-primary" >Se connecter</button>
            
             </div>
             <div class="col-md-4">

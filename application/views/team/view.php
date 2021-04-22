@@ -1,253 +1,220 @@
-<br><br><br><br><br>
-<main class="page team_page">
-  <div class="float_nav_wrapper">
-        <div class="abt-nav">
-        <ul class="abt-nav-list">
-            <li class="abt-nav-items ">
-            <a data-href="#our-founder" href="?php echo base_url() ?>#our-founder" class="link_ ">
-                <div class="img_box">
-                <div class="img_ b-lazy" data-src="https://arabyouthcenter.org/assets/frontend/dist/images/team_i_1.svg"></div>
-                </div>
-
-                <div class="title">
-                <span>
-                    Our President
-                </span>
-                </div>
-            </a></li>
-            <li class="abt-nav-items">
-            <a data-href="#our-leadership" href="?php echo base_url() ?>#our-leadership" class="link_">
-                <div class="img_box">
-                <div class="img_ b-lazy" data-src="https://arabyouthcenter.org/assets/frontend/dist/images/team_i_2.svg"></div>
-                </div>
-                <div class="title">
-                <span>
-                    Our Leadership
-                </span>
-                </div>
-            </a>
-            </li>
-            <li class="abt-nav-items">
-                <a data-href="#the-team" href="?php echo base_url() ?>#the-team" class="link_">
-                    <div class="img_box">
-                    <div class="img_ b-lazy" data-src="https://arabyouthcenter.org/assets/frontend/dist/images/team_i_3.svg"></div>
-                    </div>
-                    <div class="title">
-                    <span>
-                        The Team
-                    </span>
-                    </div>
-                </a>
-            </li>
-            <li class="abt-nav-items">
-                <a data-href="#join-the-team" href="<?php echo base_url() ?>#join-the-team" class="link_">
-                    <div class="img_box">
-                        <div class="img_ b-lazy" data-src="https://arabyouthcenter.org/assets/frontend/dist/images/team_i_4.svg"></div>
-                    </div>
-                    <div class="title">
-                        <span>
-                            JOIN THE TEAM
-                        </span>
-                    </div>
-                </a>
-            </li>
-            
-        </ul>
-        </div>
-  </div>  <section class="page-section who-we banner_section team_banner" >
-    <div class="section-title">
-      
-      <span>Notre équipe</span>
-    </div>
-    <div class="container ">
-
-
-      <div class="who-content-wrapper">
-
-        <div class="inner_ ">
-          <div class="img-wrapper"  id="our-founder">
-            <div class="img-box">
-              <div class="img_ b-lazy" data-src="<?php echo base_url() ?>uploads/nizar2.jpg"></div>
-            </div>
-          </div>
-
-          <div class="content-wrapper no_pad">
-            <div class="subtitle_">
-              <h2>Notre président</h2>
-            </div>
-            <div class="text_box">
-                <p><strong>His Highness Sheikh Mansour bin Zayed Al Nahyan</strong></p>
-                <span>Deputy Prime Minister, Minister of Presidential Affairs and Chairman of the Arab Youth Center</span>
-                <p>&quot;The Arab world has one of the youngest populations in the world. They are the most precious resource, with their tremendous energy and wealth of creative ideas, they gives us new hope every day to make the future a better place. &nbsp;By realizing the dreams of our youth, we&rsquo;ll realize the Arab dream.&nbsp;<br />
-All Arab governments are responsible of providing new opportunities for young people, as well as employment, support and ideal conditions for them to thrive. The Arab youth are considered as our trusted advisors in achieving the strategies, and together, we can make the world a better place for the next generation.<br />
-The Arab Youth Center aims to develop and implement initiatives and conduct in-depth research to offer a bright picture of the young Arab generation across the globe. Established and led by Arab youth, the Center seeks to expand its footprint across the Arab world.&nbsp;<br />
-Serving as a platform for bright young minds to meet so that the nations can unite, the Center aspires to empower Arab youth to contribute to build a prosperous future. &quot;<br />
-&nbsp;</p>
-            </div>
-            <div class="content-wrapper" style="padding:0px">
-              <a style="color:#000;" href="#" data-fancybox data-src="#our_president_popup" target="_blank" class="read_more" title="Read More"><span>Biography</span></a>
-            </div>
-          </div>
-        </div>
-
+<div class="cover--header pt--80 text-center bg--img" data-overlay="0.6" data-overlay-color="white" data-rjs="2" style="background-image: url(&quot;img/cover-header-img/bg-02.jpg&quot;);">
+   <div class="container">
+      <h2>Club Tunivisions <?php echo $clubInfo->name ?> </h2>
+      <i class="fa fa-birthday-cake"></i>&nbsp;&nbsp;Crée le : <?php echo $clubInfo->birthday ?> </br>
+      <i class="fa fa-users"></i>&nbsp;&nbsp;<?php echo count($members) ?> Membre actif</br>
+      <i class="fa fa-users"></i>&nbsp;&nbsp;<?php echo count($projectRecords) ?> Activités</br>
+      <i class="fa fa-facebook-square"></i>&nbsp;&nbsp;<a href="<?php echo $clubInfo->email ?>" title="">club Tunivisions <?php echo $clubInfo->name ?></a></br>
+      <i class="fa fa-at"></i>&nbsp;&nbsp;<?php echo $clubInfo->facebook ?></br>
+      <div class="cover--user-desc fw--400 fs--18 fstyle--i text-darkest">
       </div>
-    </div>
+   </div>
+</div>
+<section class="page--wrapper pt--80 pb--20" style="transform: none;">
+   <div class="container" style="transform: none;">
+   <div class="row" style="transform: none;">
+   <!-- Main Content Start -->
+   <div class="main--content col-md-12 pb--60" data-trigger="stickyScroll" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+      <!-- Load More Button Start -->
+      <!-- Load More Button End -->
+      <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none;">
+         <div class="main--content-inner drop--shadow">
+            <!-- Content Nav Start -->
+            <div class="content--nav pb--30">
+               <ul class="nav nav-tabs  nav ff--primary fs--14 fw--500 bg-lighter">
+                  <li class="btn   nav-item">
+                     <a class="active" href="#About" data-toggle="tab" data-ripple="">Bureau Executif</a>
+                  </li>
+                  <li class="btn  nav-item">
+                     <a href="#Membres" data-toggle="tab" data-ripple="">Membres</a>
+                  </li>
+                  <li class="btn  nav-item">
+                     <a href="#Projects" data-toggle="tab" data-ripple="">Activités</a>
+                  </li>
+               </ul>
+            </div>
+            <!-- Content Nav End -->
+            <div class="tab-content">
+               <div class="tab-pane " id="About">
+                  <div class="cover--avatar" data-overlay="0.3" data-overlay-color="primary">
+                     <img src="img/cover-header-img/avatar-02.jpg" alt="">
+                  </div>
+                  <div class="cover--user-name">
+                     <h4 class="h3 fw--600">Food Recipes</h4>
+                  </div>
+                  <div class="cover--user-activity">
+                     <p><i class="fa mr--8 fa-clock-o"></i>Président</p>
+                  </div>
+                  <div class="cover--avatars">
+                     <p>Vice Président</p>
+                     <ul class="nav">
+                        <li>
+                           <a href="member-activity-personal.html" data-overlay="0.3" data-overlay-color="primary">
+                           <img src="img/group-img/admin-avatar-01.jpg" alt="">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="member-activity-personal.html" data-overlay="0.3" data-overlay-color="primary">
+                           <img src="img/group-img/admin-avatar-02.jpg" alt="">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="member-activity-personal.html" data-overlay="0.3" data-overlay-color="primary">
+                           <img src="img/group-img/admin-avatar-03.jpg" alt="">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="member-activity-personal.html" data-overlay="0.3" data-overlay-color="primary">
+                           <img src="img/group-img/admin-avatar-03.jpg" alt="">
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="cover--avatars">
+                     <p>Assitants</p>
+                     <ul class="nav">
+                        <li>
+                           <a href="member-activity-personal.html" data-overlay="0.3" data-overlay-color="primary">
+                           <img src="img/group-img/admin-avatar-01.jpg" alt="">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="member-activity-personal.html" data-overlay="0.3" data-overlay-color="primary">
+                           <img src="img/group-img/admin-avatar-02.jpg" alt="">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="member-activity-personal.html" data-overlay="0.3" data-overlay-color="primary">
+                           <img src="img/group-img/admin-avatar-03.jpg" alt="">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="member-activity-personal.html" data-overlay="0.3" data-overlay-color="primary">
+                           <img src="img/group-img/admin-avatar-03.jpg" alt="">
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="tab-pane" id="Membres">
+                  <style>
+                     .wrapper1 {
+                     display: grid;
+                     grid-template-columns: repeat(3, 1fr);
+                     grid-gap: 10px;
+                     }
+                  </style>
+                  <input type="text" id="membreSearch" class="form-control" onkeyup="searchMembrer()" style="width: cover" placeholder="Chercher un membre">
+                  <br><br>
+                  <ul id="myUL" class="wrapper1">
+                     <?php foreach ($members as $member ) {?>
+                     <li style="list-style:none;">
+                        <a href="#">
+                           <div class="row">
+                              <div class="col-md-3 member--item online ">
+                                 <div class="img img-circle">
+                        <a href="member-activity-personal.html" class="btn-link">
+                        <img src="<?php echo base_url() ?>assets/img/members-img/member-12.jpg" alt="">
+                        </a>
+                        </div>
+                        </div>
+                        <div class="col-md-9">
+                        <h5><?php echo $member->name?></h5>
+                        <b><?php echo $member->role?></b> <?php echo $member->cellule?><br>
+                        membre depuis <?php echo $member->affectedYear?> 
+                        </div>
+                        </div>    
+                        </a>
+                     </li>
+                     <?php } ?>
+                  </ul>
+                  <script>
+                     function searchMembrer() {
+                       // Declare variables
+                       var input, filter, ul, li, a, i, txtValue;
+                       input = document.getElementById('membreSearch');
+                       filter = input.value.toUpperCase();
+                       ul = document.getElementById("myUL");
+                       li = ul.getElementsByTagName('li');
+                     
+                       // Loop through all list items, and hide those who don't match the search query
+                       for (i = 0; i < li.length; i++) {
+                         a = li[i].getElementsByTagName("h5")[0];
+                         txtValue = a.textContent || a.innerText;
+                         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                           li[i].style.display = "";
+                         } else {
+                           li[i].style.display = "none";
+                         }
+                       }
+                     }
+                  </script>
+               </div>
+               <div class="tab-pane" id="Projects">
+                  <style>
+                     .wrapper2 {
+                     display: grid;
+                     grid-template-columns: repeat(1, 1fr);
+                     grid-gap: 10px;
+                     }
+                  </style>
+                  <input type="text" id="projectSearch" class="form-control" onkeyup="searchProject()" style="width: cover" placeholder="Chercher un projet">
+                  <br><br>
+                  <ul id="myULP" class="wrapper2">
+                     <?php foreach ($projectRecords as $project ) {?>
+                     <li style="list-style:none;">
+                        <div class="activity--info fs--14" style="border-radius: 30px ;  padding: 10px;" >
+                           <div class="activity--header">
+                              <p><?php echo $project->titre ?></p>
+                           </div>
+                           <div class="activity--meta fs--12">
+                              <p><i class="fa mr--8 fa-clock-o"></i><?php echo $project->startDate ?> <i class="fa mr--8 fa-clock-o"></i><?php echo $project->endDate ?></p>
+                           </div>
+                           <div class="activity--content">
+                              <p><?php echo $project->description ?></p>
+                           </div>
+                        </div>
+                        <hr>
+                     </li>
+                     <?php } ?>
+                  </ul>
+                  <script>
+                     function searchProject() {
+                       // Declare variables
+                       var input, filter, ul, li, a, i, txtValue;
+                       input = document.getElementById('projectSearch');
+                       filter = input.value.toUpperCase();
+                       ul = document.getElementById("myULP");
+                       li = ul.getElementsByTagName('li');
+                     
+                       // Loop through all list items, and hide those who don't match the search query
+                       for (i = 0; i < li.length; i++) {
+                         a = li[i].getElementsByTagName("p")[0];
+                         txtValue = a.textContent || a.innerText;
+                         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                           li[i].style.display = "";
+                         } else {
+                           li[i].style.display = "none";
+                         }
+                       }
+                     }
+                  </script>
+               </div>
+            </div>
+            <!-- Activity List End -->
+            <div class="resize-sensor" style="position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+               <div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                  <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 790px; height: 1892px;"></div>
+               </div>
+               <div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                  <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Main Content End -->
+      <!-- Main Sidebar Start -->
+      <div class="main--sidebar col-md-4 pb--60" data-trigger="stickyScroll" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+      </div>
+   </div>
 </section>
-
-<div id="our_president_popup" class="popup_teammembers">
-  <div class="new_suc_details_wrapper">
-    <div class="n_s_d_bottom full_">
-        <div class="content_">
-          <span class="position_">Notre président</span>
-        </div>
-        <div class="text_box">
-          <p>His Highness Sheikh Mansour bin Zayed Al Nahyan was born in Abu Dhabi in 1970. After receiving his high school diploma through the Abu Dhabi school system, His Highness continued his studies in the United States, where he was awarded his Bachelor&#39;s degree in International Relations in 1993. HH Sheikh Mansour was appointed as Chairman of the Office of his late father, HH Sheikh Zayed bin Sultan, a post he held until Sheikh Zayed&#39;s sad demise in November 2004. In November 2004, HH Sheikh Mansour was appointed as the Minister of Presidential Affairs, a ministerial portfolio created following the amalgamation of The Office of HH the President and The Presidential Court to form the Ministry of Presidential Affairs. In 2006, His Highness was appointed Chairman of the Ministerial Council for Services. In 2007, HH Sheikh Mansour was appointed Chairman of the Emirates Investment Authority (EIA), the only Sovereign Wealth Fund of the Federal Government of the United Arab Emirates. In May 2009, with the formation of the new Cabinet, HH Sheikh Mansour bin Zayed was appointed Deputy Prime Minister, a position he holds to date along with that of Minister of Presidential Affairs. In addition, HH Sheikh Mansour bin Zayed chairs a number of local departments, public corporations and centres. Amongst these are - the Abu Dhabi Judicial Department (ADJD), - the Abu Dhabi Fund for Development (ADFD), which awards soft loans and grants to developing countries, - the National Centre for Documentation and Research (NCDR), - the Abu Dhabi Food Control Authority (ADFCA), - Abu Dhabi&rsquo;s International Petroleum Investment Company (IPIC), - the Board of Trustees of the National Centre of Meteorology &amp; Seismology, - the Emirates Racing Authority, and - the Khalifa bin Zayed Charity Foundation (KBZF), a pioneer entity in supporting poor and needy communities through the provision of main infrastructure such as schools and hospitals, etc. In addition to these positions, HH Sheikh Mansour has been, since 2005, the Deputy Chairman of the Abu Dhabi Education Council (ADEC). He is also a member of the Supreme Petroleum Council (SPC), the Board of Directors of the Abu Dhabi Investment Authority (ADICA), the Board of Directors of the Abu Dhabi Investment Council (ADIC) and the Border Affairs Council (BAC), the UAE&#39;s official competent authority mandated to deal with borders issues.&nbsp;</p>        
-        </div>
-    </div>
-  </div>
-</div>  <section class="page-section our-vision-mission bg_color team_leader gallery-sec" >
-    <div class="container ">
-        <div class="mission_vision_content_wrapper " id="our-leadership">
-        <div class="gallery_inner">
-            <div class="subtitle_ white_">
-                <h2>Note Leadership</h2>
-            </div>
-
-            <div class="leaders_wrapper">
-
-                <div class="row" style="text-align: center" >
-                    <div class="col-md-12">
-                        <img class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $EM->avatar ?>" >
-                        <b style="color: white"><br><?php echo $EM->name ?></b>
-                        <small style="color: white" ><br>Manager executif<br><br></small>
-                    </div>
-                    <div class="col-md-4">    
-                        <img class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $CA->avatar ?>" >
-                                <b style="color: white" ><br><?php echo $CA->name ?></b>
-                                <small style="color: white"><br>Coordinateur national Alumni</small>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $CU->avatar ?>" >
-                                <b style="color: white"><br><?php echo $CU->name ?></b>
-                                <small style="color: white"><br>Coordinateur national University</small>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $CH->avatar ?>" >
-                                <b style="color: white"><br><?php echo $CH->name ?></b>
-                                <small style="color: white"><br>Coordinateur national High School</small>
-                    </div>
-                      
-             
-            </div>
-        </div>
-
-
-      </div>
-    </div>
-</section>  <section class="page-section newsletter-sec team_members" id="the-team">
-
-      <div class="container">
-          <div class="team_bottom">
-            <div class="inner_">
-                <div class="subtitle_">
-                    <h2>Equipe Alumni</h2>
-                </div>
-
-                
-                             <div class="row">
-                              <?php foreach ($CA->managers as $key ) {?> 
-                                <div class="col-md-3" style="text-align : center" >
-                                    <img  class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>">
-                                     <p ><strong><?php echo $key->name ?></strong></p>
-                                     <small >Manager <?php echo $key->cellule ?></small>
-                                </div>
-                              <?php } ?>     
-                              </div>                    
-                             
-                                                    </div>
-                    </div>
-
-      </div>
-
-            <div class="container">
-          <div class="team_bottom">
-            <div class="inner_">
-                <div class="subtitle_">
-                    <h2>Equipe University</h2>
-                </div>
-
-                
-                             <div class="row">
-                              <?php foreach ($CU->managers as $key ) {?> 
-                                <div class="col-md-3" style="text-align : center" >
-                                    <img  class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>">
-                                     <p ><strong><?php echo $key->name ?></strong></p>
-                                     <small >Manager <?php echo $key->cellule ?></small>
-                                </div>
-                              <?php } ?>     
-                              </div>                    
-                             
-                                                    </div>
-                    </div>
-
-      </div>
-
-
-            <div class="container">
-          <div class="team_bottom">
-            <div class="inner_">
-                <div class="subtitle_">
-                    <h2>Equipe High School</h2>
-                </div>
-
-                
-                             <div class="row">
-                              <?php foreach ($CH->managers as $key ) {?> 
-                                <div class="col-md-3" style="text-align : center" >
-                                    <img  class="alligator-profile" src="https://www.tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>">
-                                     <p ><strong><?php echo $key->name ?></strong></p>
-                                     <small >Manager <?php echo $key->cellule ?></small>
-                                </div>
-                              <?php } ?>     
-                              </div>                    
-                             
-                                                    </div>
-                    </div>
-
-      </div>
-
-
-</section>  
-
-<section class="page-section join_sec" id="join-the-team">
-    <div class="inner_">
-        <div class="content_wrapper">
-            <div class="icon_">
-                <div class="img-box">
-                    <div class="img_ b-lazy" data-src="../assets/frontend/dist/images/team_join.svg"></div>
-                </div>
-            </div>
-
-            <div class="text_">
-
-                <div class="subtitle_ white_">
-                    <h2>Rejoins la fondation</h2>
-                </div>
-
-
-                <div class="text_box">
-                    <p>Nous sommes toujours à la recherche de nouveaux talents qui veulent faire la différence.</p>
-                </div>
-            </div>
-
-            <a href="https://www.linkedin.com/company/arabyouthcenter/" target="_blank" class="read_more white_" title="Read More"><span>Lire la suite</span></a>
-
-        </div>
-
-        <div class="image_wrapper">
-            <div class="img-box">
-                <div class="img_ b-lazy" data-src="../storage/post/small_banner/hPXbFPv7M3tUrklG1JRXOGCP2co4owAfC1zp1NCo.jpg"></div>
-            </div>
-        </div>
-    </div>
-</section></main>

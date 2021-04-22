@@ -14,22 +14,7 @@ public function __construct()
 
     }
 
-    public function index()
-    {
-
-        $data["albums"]=$this->media_model->albumListing();
-        foreach ($data["albums"]  as $album ) {
-
-           $album->contentRecords =$this->media_model->contentListing($album->albumId);
-            $album->cover  =$this->media_model->Cover($album->albumId);
-
-        }
-       
-        $data["newsRecords"]=$this->news_model->newsListing();
-      $this->loadViews("media/view", $this->global, $data , NULL); 
-
-      
-    }
+   
 
 
     public function Add()

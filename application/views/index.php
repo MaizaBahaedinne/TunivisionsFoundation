@@ -108,7 +108,7 @@
                         <!-- Feature Item Start -->
                         <div class="feature--item bg-default text-center">
                             <div class="title">
-                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">2000</span>k+</h2>
+                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">2</span>k+</h2>
                             </div>
 
                             <div class="sub-title">
@@ -209,5 +209,279 @@
             </div>
         </section>
 
+
+
+ <!-- Most Popular Groups Section Start -->
+        <section class="section bg-lighter pt--70 pb--70">
+            <div class="container">
+                <!-- Box Nav Start -->
+                <div class="box--nav clearfix">
+                    <h2 class="h2 fw--600 float--left">Nos Partenaires</h2>
+
+                    <ul class="nav ff--primary float--right">
+                      <!--  <li class="active"><a href="#boxItemsTab01" class="btn btn-default" data-toggle="tab">Newest</a></li> -->   
+                    </ul>
+                </div>
+                <!-- Box Nav End -->
+
+                <!-- Tab Content Start -->
+                <div class="tab-content">
+                    <!-- Tab Pane Start -->
+                    <div class="tab-pane fade in active" id="boxItemsTab01">
+                        <!-- Box Items Start -->
+                        <div class="box--items owl-carousel" data-owl-items="4" data-owl-margin="30" data-owl-autoplay="false">
+
+
+                          
+                            <!-- Box Item End -->
+
+                            <!-- Box Item Start -->
+                            <div class="box--item text-center">
+                                <a href="group-home.html" class="img" data-overlay="0.1">
+                                    <img src="<?php echo base_url()  ?>assets/img/group-img/06.jpg" alt="">
+                                </a>
+
+                                <div class="info">
+                                   
+
+                                    <div class="title">
+                                        <h2 class="h6"><a href="group-home.html">Nom Partenaire</a></h2>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                            <!-- Box Item End -->
+                        </div>
+                        <!-- Box Items End -->
+
+                        <!-- Box Controls Start -->
+                        <div class="box--controls text-center">
+                            <a href="#" class="btn fs--16 btn-default" data-action="prev">
+                                <i class="fa fa-caret-left"></i>
+                            </a>
+
+                            <a href="groups.html" class="btn ff--primary fw--500 btn-default"></a>
+
+                            <a  class="btn fs--16 btn-default" data-action="next">
+                                <i class="fa fa-caret-right"></i>
+                            </a>
+                        </div>
+                        <!-- Box Controls End -->
+                    </div>
+                    <!-- Tab Pane End -->
+
+                    <!-- Tab Pane Start -->
+                    <div class="tab-pane fade" id="boxItemsTab02">
+                        <!-- Box Items Start -->
+                        <div class="box--items owl-carousel" data-owl-items="4" data-owl-margin="30" data-owl-autoplay="false">
+                            <!-- Box Item Start -->
+                            <div class="box--item text-center">
+                                <a href="group-home.html" class="img" data-overlay="0.1">
+                                    <img src="<?php echo base_url()  ?>assets/img/group-img/01.jpg" alt="">
+                                </a>
+
+                                <div class="info">
+                                    <div class="icon fs--18 text-lightest bg-primary">
+                                        <i class="fa fa-plane"></i>
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h6"><a href="#">Travel ( Just Take A Tour )</a></h2>
+                                    </div>
+
+                                    <div class="meta">
+                                        <p><i class="fa mr--8 fa-clock-o"></i>Active 8 days ago</p>
+                                        <p><i class="fa mr--8 fa-user-o"></i>Public Group / 2500 Members</p>
+                                    </div>
+
+                                    <div class="desc text-darker">
+                                        <p>Lorem Ipsum is simply dummy text of the printing &amp; typesetting.</p>
+                                    </div>
+
+                                    <div class="action">
+                                        <a href="#">Group Details<i class="fa ml--10 fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Box Item End -->
+
+                            <!-- Box Item Start -->
+                            <div class="box--item text-center">
+                                <a href="group-home.html" class="img" data-overlay="0.1">
+                                    <img src="<?php echo base_url()  ?>assets/img/group-img/02.jpg" alt="">
+                                </a>
+
+                                <div class="info">
+                                    <div class="icon fs--18 text-lightest bg-primary">
+                                        <i class="fa fa-music"></i>
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h6"><a href="#">Music Lover ( Injoy Yourself )</a></h2>
+                                    </div>
+
+                                    <div class="meta">
+                                        <p><i class="fa mr--8 fa-clock-o"></i>Active 8 days ago</p>
+                                        <p><i class="fa mr--8 fa-user-o"></i>Public Group / 2500 Members</p>
+                                    </div>
+
+                                    <div class="desc text-darker">
+                                        <p>Lorem Ipsum is simply dummy text of the printing &amp; typesetting.</p>
+                                    </div>
+
+                                    <div class="action">
+                                        <a href="#">Group Details<i class="fa ml--10 fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Box Item End -->
+
+                            <!-- Box Item Start -->
+                            <div class="box--item text-center">
+                                <a href="group-home.html" class="img" data-overlay="0.1">
+                                    <img src="<?php echo base_url()  ?>assets/img/group-img/03.jpg" alt="">
+                                </a>
+
+                                <div class="info">
+                                    <div class="icon fs--18 text-lightest bg-primary">
+                                        <i class="fa fa-camera"></i>
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h6"><a href="#">Photography ( Memories )</a></h2>
+                                    </div>
+
+                                    <div class="meta">
+                                        <p><i class="fa mr--8 fa-clock-o"></i>Active 8 days ago</p>
+                                        <p><i class="fa mr--8 fa-user-o"></i>Public Group / 2500 Members</p>
+                                    </div>
+
+                                    <div class="desc text-darker">
+                                        <p>Lorem Ipsum is simply dummy text of the printing &amp; typesetting.</p>
+                                    </div>
+
+                                    <div class="action">
+                                        <a href="#">Group Details<i class="fa ml--10 fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Box Item End -->
+
+                            <!-- Box Item Start -->
+                            <div class="box--item text-center">
+                                <a href="group-home.html" class="img" data-overlay="0.1">
+                                    <img src="<?php echo base_url()  ?>assets/img/group-img/04.jpg" alt="">
+                                </a>
+
+                                <div class="info">
+                                    <div class="icon fs--18 text-lightest bg-primary">
+                                        <i class="fa fa-paw"></i>
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h6"><a href="#">Tasty Food Recipes</a></h2>
+                                    </div>
+
+                                    <div class="meta">
+                                        <p><i class="fa mr--8 fa-clock-o"></i>Active 8 days ago</p>
+                                        <p><i class="fa mr--8 fa-user-o"></i>Public Group / 2500 Members</p>
+                                    </div>
+
+                                    <div class="desc text-darker">
+                                        <p>Lorem Ipsum is simply dummy text of the printing &amp; typesetting.</p>
+                                    </div>
+
+                                    <div class="action">
+                                        <a href="#">Group Details<i class="fa ml--10 fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Box Item End -->
+
+                            <!-- Box Item Start -->
+                            <div class="box--item text-center">
+                                <a href="group-home.html" class="img" data-overlay="0.1">
+                                    <img src="<?php echo base_url()  ?>assets/img/group-img/05.jpg" alt="">
+                                </a>
+
+                                <div class="info">
+                                    <div class="icon fs--18 text-lightest bg-primary">
+                                        <i class="fa fa-laptop"></i>
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h6"><a href="#">Pet Care ( Passionately )</a></h2>
+                                    </div>
+
+                                    <div class="meta">
+                                        <p><i class="fa mr--8 fa-clock-o"></i>Active 8 days ago</p>
+                                        <p><i class="fa mr--8 fa-user-o"></i>Public Group / 2500 Members</p>
+                                    </div>
+
+                                    <div class="desc text-darker">
+                                        <p>Lorem Ipsum is simply dummy text of the printing &amp; typesetting.</p>
+                                    </div>
+
+                                    <div class="action">
+                                        <a href="#">Group Details<i class="fa ml--10 fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Box Item End -->
+
+                            <!-- Box Item Start -->
+                            <div class="box--item text-center">
+                                <a href="group-home.html" class="img" data-overlay="0.1">
+                                    <img src="<?php echo base_url()  ?>assets/img/group-img/06.jpg" alt="">
+                                </a>
+
+                                <div class="info">
+                                    <div class="icon fs--18 text-lightest bg-primary">
+                                        <i class="fa fa-cutlery"></i>
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h6"><a href="#">Technology</a></h2>
+                                    </div>
+
+                                    <div class="meta">
+                                        <p><i class="fa mr--8 fa-clock-o"></i>Active 8 days ago</p>
+                                        <p><i class="fa mr--8 fa-user-o"></i>Public Group / 2500 Members</p>
+                                    </div>
+
+                                    <div class="desc text-darker">
+                                        <p>Lorem Ipsum is simply dummy text of the printing &amp; typesetting.</p>
+                                    </div>
+
+                                    <div class="action">
+                                        <a href="#">Group Details<i class="fa ml--10 fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Box Item End -->
+                        </div>
+                        <!-- Box Items End -->
+
+                        <!-- Box Controls Start -->
+                        <div class="box--controls text-center">
+                            <a href="#" class="btn fs--16 btn-default" data-action="prev">
+                                <i class="fa fa-caret-left"></i>
+                            </a>
+
+                            <a href="groups.html" class="btn ff--primary fw--500 btn-default">View All Groups</a>
+
+                            <a href="#" class="btn fs--16 btn-default" data-action="next">
+                                <i class="fa fa-caret-right"></i>
+                            </a>
+                        </div>
+                        <!-- Box Controls End -->
+                    </div>
+
+                </div>
+                <!-- Tab Content End -->
+            </div>
+        </section>
+        <!-- Most Popular Groups Section End -->
 
 

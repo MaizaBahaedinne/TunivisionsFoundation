@@ -65,7 +65,7 @@
                                             <!-- Post Title Start -->
                                             <div class="post--title mt--10">
                                                 <h3 class="h6">
-                                                    <a href="blog-details.html" class="btn-link"><?php echo $new->titreFr ?></a>
+                                                    <a href="<?php echo base_url()  ?>News/new/<?php echo $new->newsId ?>" class="btn-link"><?php echo $new->titreFr ?></a>
                                                 </h3>
                                             </div>
                                             <!-- Post Title End -->

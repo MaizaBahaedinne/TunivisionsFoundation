@@ -32,12 +32,16 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/responsive-style.css">
     
     <!-- ==== Color Scheme Stylesheet ==== -->
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/colors/color-1.css" id="changeColorScheme">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/colors/color-4.css" id="changeColorScheme">
     
     <!-- ==== Custom Stylesheet ==== -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/custom.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
 
+    <script defer type="text/javascript" src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js" ></script>
+          
     <!-- ==== HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries ==== -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -65,9 +69,9 @@
 
                     <!-- Header Topbar Social Start -->
                     <ul class="header--topbar-social nav float--left hidden-xs">
-                        <li><a href="https://www.facebook.com/Tunivisionsfoundation"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube"> </i></a> | Tunivisions Foundation</li> 
+                        <li><a href="https://www.facebook.com/Tunivisionsfoundation" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/tunivisions_foundation/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/c/TunivisionsFoundation/" target="_blank"><i class="fa fa-youtube"> </i></a> | Tunivisions Foundation</li> 
                     </ul>
                     <!-- Header Topbar Social End -->
 
@@ -81,7 +85,7 @@
                         </li>
                     -->
                         <li>
-                            <a href="#" class="btn-link">
+                            <a href="<?php echo base_url() ?>Admin" class="btn-link">
                                 <i class="fa mr--8 fa-user-o"></i>
                                 <span>Se connecter</span>
                             </a>
@@ -126,7 +130,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <li><a href="?php echo base_url() ?>About"><span>A Propos</span></a></li>
+                                    <li><a href="<?php echo base_url() ?>About"><span>A Propos</span></a></li>
                                     <li><a href="<?php echo base_url() ?>About#Vsions"><span>Visions</span></a></li>
                                     <li><a href="<?php echo base_url() ?>About#Missions"><span>Missions</span></a></li>
                                     <li><a href="<?php echo base_url() ?>About#Valeurs"><span>Valeurs</span></a></li>
@@ -143,17 +147,55 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <li><a href="home-1.html"><span>Top Management</span></a></li>
+                                    <li><a href="<?php echo base_url() ?>Team"><span>Top Management</span></a></li>
                                     <li><a href="home-2.html"><span>High School</span></a></li>
                                     <li><a href="home-3.html"><span>University</span></a></li>
                                     <li><a href="home-4.html"><span>Alumni</span></a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span>Nos Clubs</span>
+                                            <i class="fa fa-caret-down"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a href="<?php echo base_url() ?>Team/clubsHighSchool"><span>High School</span></a></li>
+                                            <li><a href="<?php echo base_url() ?>Team/clubsUniversity"><span>University</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span>Actualités</span>
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?php echo base_url() ?>News"><span>Nouvelles</span></a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span>Projets</span>
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?php echo base_url() ?>Projets"><span>We Are Carthage</span></a></li>
+                                    <li><a href="<?php echo base_url() ?>Projets"><span>Tunivisions.Link</span></a></li>
+                                    <li><a href="<?php echo base_url() ?>Projets"><span>We Are Campers</span></a></li>
+                                    <li><a href="<?php echo base_url() ?>Projets"><span>Innov/Hack Challange</span></a></li>
                                 </ul>
                             </li>
                            
-
                             
+                            
+                      
+                          <li><a href="<?php echo base_url() ?>Contact"><span>Contact</span></a></li>
 
-                            <li><a href="contact.html"><span>Contact</span></a></li>
                         </ul>
                         <!-- Header Nav Links End -->
                     </div>

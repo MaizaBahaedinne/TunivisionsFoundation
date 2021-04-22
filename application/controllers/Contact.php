@@ -3,7 +3,7 @@
 require APPPATH . '/libraries/BaseController.php';
 
 
-class Newletter extends BaseController {
+class Contact extends BaseController {
 
 public function __construct()
     {
@@ -13,6 +13,14 @@ public function __construct()
 
 
     }
+
+
+    public function index()
+	{
+		$this->global['pageTitle'] = 'Contact | ';
+		
+		$this->loadViews("Newletter/contact", $this->global, Null , NULL); 
+	}
 
 
 

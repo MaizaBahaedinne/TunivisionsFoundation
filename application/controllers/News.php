@@ -30,10 +30,23 @@ public function __construct()
 	 */
 
 
+	 public function index()
+    {
+
+      
+
+        $this->global['pageTitle'] = 'Actualité | ';
+        $data["newsRecords"]=$this->news_model->newsListing();
+      $this->loadViews("news/list", $this->global, $data , NULL); 
+
+      
+    }
+
 
 	public function new($newId)
 	{
 		$data["new"]=$this->news_model->newsInfo($newId);
+		$this->global['pageTitle'] = $data["new"]->titreFr.' | ';
 		$this->loadViews("news/view", $this->global, $data , NULL); 
 	}
 

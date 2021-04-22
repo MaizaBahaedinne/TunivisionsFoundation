@@ -17,7 +17,13 @@
             <div class="container">
                 <div class="row row--md-vc">
                     <div class="col-md-6 pb--40">
-                        <img src="img/about-img/01.jpg" alt="">
+                        <div class="video--popup style--1" data-overlay="0.3">
+                                <img src="<?php echo base_url() ?>assets/img/why-choose-us-img/video-poster-1.jpg" alt="">
+
+                                <a href="https://www.youtube.com/watch?v=-GukCJLLUxE" class="btn-link" data-trigger="video_popup">
+                                    <span><i class="fa fa-play"></i></span>
+                                </a>
+                            </div>
                     </div>
 
                     <div class="col-md-6 pb--40">
@@ -42,76 +48,76 @@
         </div>
 
  <!-- Les chiffres -->
-        <section class="section bg-lighter pt--80 pb--40">
+          <section class="section bg-lighter pt--80 pb--40">
             <div class="container">
-                <div class="row AdjustRow" style="position: relative; height: 239px;">
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--40" style="position: absolute; left: 0px; top: 0px;">
+                <div class="row AdjustRow">
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--40">
                         <!-- Feature Item Start -->
                         <div class="feature--item bg-default text-center">
                             <div class="title">
-                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">530</span>k+</h2>
+                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">3</span></h2>
                             </div>
 
                             <div class="sub-title">
-                                <h3 class="h2 fs--16">Stories / Topics Created</h3>
+                                <h3 class="h2 fs--16">Chapter</h3>
                             </div>
 
                             <div class="desc">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <p>High School | University | Alumni</p>
                             </div>
                         </div>
                         <!-- Feature Item End -->
                     </div>
 
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--40" style="position: absolute; left: 292px; top: 0px;">
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--40">
                         <!-- Feature Item Start -->
                         <div class="feature--item bg-default text-center">
                             <div class="title">
-                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">30</span>k+</h2>
+                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">350</span>+</h2>
                             </div>
 
                             <div class="sub-title">
-                                <h3 class="h2 fs--16">Member Online Right Now</h3>
+                                <h3 class="h2 fs--16">Clubs</h3>
                             </div>
 
                             <div class="desc">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <p>dans les lycées et les facultés<br>depuis 2016</p>
                             </div>
                         </div>
                         <!-- Feature Item End -->
                     </div>
 
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--40" style="position: absolute; left: 585px; top: 0px;">
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--40">
                         <!-- Feature Item Start -->
                         <div class="feature--item bg-default text-center">
                             <div class="title">
-                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">1.5</span>k+</h2>
+                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">16</span>k+</h2>
                             </div>
 
                             <div class="sub-title">
-                                <h3 class="h2 fs--16">Active Group / Meeting Room</h3>
+                                <h3 class="h2 fs--16">Tunimateurs</h3>
                             </div>
 
                             <div class="desc">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <p>Tranche d'age entre 13 et 25 ans <br>depuis 2016</p>
                             </div>
                         </div>
                         <!-- Feature Item End -->
                     </div>
 
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--40" style="position: absolute; left: 877px; top: 0px;">
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--40">
                         <!-- Feature Item Start -->
                         <div class="feature--item bg-default text-center">
                             <div class="title">
-                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">03</span>k+</h2>
+                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">2000</span>k+</h2>
                             </div>
 
                             <div class="sub-title">
-                                <h3 class="h2 fs--16">New Event In Every Week</h3>
+                                <h3 class="h2 fs--16">Project</h3>
                             </div>
 
                             <div class="desc">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <p>Conférence | Formation | Evenement <br>depuis 2016</p>
                             </div>
                         </div>
                         <!-- Feature Item End -->
@@ -125,7 +131,7 @@
             <div class="container">
                 <div class="row row--md-vc">
                     <div class="col-md-6 pb--40">
-                        <img src="img/about-img/01.jpg" alt="">
+                        <img src="<?php echo base_url() ?>assets/img/about-img/01.jpg" alt="">
                     </div>
 
                     <div class="col-md-6 pb--40">
@@ -166,12 +172,7 @@
                             </div>
 
                             <div class="content fs--14">
-                                <p>Ce qui nous porte, nous motive et nous identifie .
-
- Ce qui est donné comme un idéal à atteindre, comme quelque chose à défendre.
-
- Ce par quoi quelqu'un est digne d'estime sur le plan moral !
-</p>
+                                <p>Ce qui nous porte, nous motive et nous identifie .</p>
                             </div>
                         </div>
                         <!-- Text Block End -->
@@ -191,7 +192,7 @@
                                         </div>
 
                                         <div class="desc mt--8">
-                                            <p>Ipsum is simply dummy text of the printing industry.</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                 </div>
@@ -211,7 +212,7 @@
                                         </div>
 
                                         <div class="desc mt--8">
-                                            <p>Ipsum is simply dummy text of the printing industry.</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                 </div>
@@ -231,7 +232,7 @@
                                         </div>
 
                                         <div class="desc mt--8">
-                                            <p>Ipsum is simply dummy text of the printing industry.</p>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -245,7 +246,7 @@
                     <div class="col-md-6 pb--60">
                         <!-- Video Popup Start -->
                         <div class="video--popup style--1" data-overlay="0.3">
-                            <img src="img/why-choose-us-img/video-poster-1.jpg" alt="">
+                            <img src="<?php echo base_url() ?>assets/img/why-choose-us-img/video-poster-1.jpg" alt="">
 
                             <a href="https://www.youtube.com/watch?v=YE7VzlLtp-4" class="btn-link" data-trigger="video_popup">
                                 <span><i class="fa fa-play"></i></span>
