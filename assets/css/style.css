@@ -5345,11 +5345,11 @@ body.isScrolling #backToTop {
 .banner--slider .owl-stage-outer,
 .banner--slider .owl-stage,
 .banner--slider .owl-item {
-    height: 50%;
+    height: 100%;
 }
 
 .banner--item {
-    height: 25%;
+    height: 100%;
 }
 
 /* 13.2. BANNER CONTENT */

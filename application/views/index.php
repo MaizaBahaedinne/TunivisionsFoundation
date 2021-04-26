@@ -6,7 +6,7 @@
                 <?php foreach ($newsRecords as $new ) { ?>
 
                 <!-- Banner Item Start -->
-                <div class="banner--item" data-bg-img="<?php echo base_url()  ?>uploads/news/<?php echo $new->media ?>" data-overlay="0.25" style="height: 800px;">
+                <div class="banner--item" data-bg-img="<?php echo base_url()  ?>uploads/news/<?php echo $new->media ?>" data-overlay="0.25" style="height: 1000px;">
                     <div class="vc--parent">
                         <div class="vc--child">
                             <div class="container">
@@ -19,16 +19,30 @@
                                             </div>
 
                                             <div class="sub-title">
-                                                <h2 class="h1 text-white">Connect, Share &amp; Engage</h2>
+                                                <h2 class="h1 text-white"><?php echo $new->titreFr ?></h2>
                                             </div>
 
                                             <div class="desc fs--16">
-                                                <p><?php echo $new->contentFr ?></p>
+                                                <p><?php 
+                                                    $string = strip_tags($new->contentFr);
+                                                        
+                                                if (strlen($string) > 500) {
+
+                                                    // truncate string
+                                                    $stringCut = substr($string, 0, 500);
+                                                    $endPoint = strrpos($stringCut, ' ');
+
+                                                    //if the string doesn't contain any space then it will cut without word basis.
+                                                    $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                                    $string .= '... ';
+                                                }
+                                                echo $string;
+                                                 ?></p>
                                             </div>
 
                                             <div class="action text-uppercase">
-                                                <a href="<?php echo base_url()  ?>News/new/<?php echo $new->newsId?>" class="btn btn-white">Learn More</a>
-                                                <a href="#" class="btn btn-primary">See Members</a>
+                                                <a href="<?php echo base_url()  ?>News/new/<?php echo $new->newsId?>" class="btn btn-white">Lire plus ...</a>
+                                                
                                             </div>
                                         </div>
                                         <!-- Banner Content End -->
@@ -229,7 +243,7 @@
                     <!-- Tab Pane Start -->
                     <div class="tab-pane fade in active" id="boxItemsTab01">
                         <!-- Box Items Start -->
-                        <div class="box--items owl-carousel" data-owl-items="4" data-owl-margin="30" data-owl-autoplay="false">
+                        <div class="box--items owl-carousel" data-owl-items="5" data-owl-margin="30" data-owl-autoplay="false">
 
 
                           
@@ -237,21 +251,94 @@
 
                             <!-- Box Item Start -->
                             <div class="box--item text-center">
-                                <a href="group-home.html" class="img" data-overlay="0.1">
-                                    <img src="<?php echo base_url()  ?>assets/img/group-img/06.jpg" alt="">
+                                <a href="http://toevolve.net/" target="_blank" class="img" data-overlay="0.1">
+                                    <img src="<?php echo base_url()  ?>assets/img/partenaires/toevolve.png" alt="">
                                 </a>
 
                                 <div class="info">
                                    
 
                                     <div class="title">
-                                        <h2 class="h6"><a href="group-home.html">Nom Partenaire</a></h2>
+                                        <h2 class="h6"><a href="group-home.html">To Evolve</a></h2>
                                     </div>
 
                                     
                                 </div>
                             </div>
                             <!-- Box Item End -->
+
+                        <!-- Box Item Start -->
+                            <div class="box--item text-center">
+                                <a href="http://www.emploi.nat.tn/fo/Fr/global.php" target="_blank" class="img" data-overlay="0.1">
+                                    <img src="<?php echo base_url()  ?>assets/img/partenaires/aneti.png" alt="">
+                                </a>
+
+                                <div class="info">
+                                   
+
+                                    <div class="title">
+                                        <h2 class="h6"><a href="group-home.html">ANETI</a></h2>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                            <!-- Box Item End -->
+
+                            <!-- Box Item Start -->
+                            <div class="box--item text-center">
+                                <a href="http://www.emploi.nat.tn/fo/Fr/global.php" target="_blank" class="img" data-overlay="0.1">
+                                    <img src="<?php echo base_url()  ?>assets/img/partenaires/giz.jpg" alt="">
+                                </a>
+
+                                <div class="info">
+                                   
+
+                                    <div class="title">
+                                        <h2 class="h6"><a href="group-home.html">GIZ</a></h2>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                            <!-- Box Item End -->
+
+                             <!-- Box Item Start -->
+                            <div class="box--item text-center">
+                                <a href="http://www.emploi.nat.tn/fo/Fr/global.php" target="_blank" class="img" data-overlay="0.1">
+                                    <img src="<?php echo base_url()  ?>assets/img/partenaires/MET.png" alt="">
+                                </a>
+
+                                <div class="info">
+                                   
+
+                                    <div class="title">
+                                        <h2 class="h6"><a href="group-home.html">ministère de l’Enseignement</a></h2>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                            <!-- Box Item End -->
+
+                             <!-- Box Item Start -->
+                            <div class="box--item text-center">
+                                <a href="http://www.emploi.nat.tn/fo/Fr/global.php" target="_blank" class="img" data-overlay="0.1">
+                                    <img src="<?php echo base_url()  ?>assets/img/partenaires/MES.png" alt="">
+                                </a>
+
+                                <div class="info">
+                                   
+
+                                    <div class="title">
+                                        <h2 class="h6"><a href="group-home.html">ministère de l’Enseignement supérieur et de la Recherche scientifique</a></h2>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                            <!-- Box Item End -->
+
                         </div>
                         <!-- Box Items End -->
 

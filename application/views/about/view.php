@@ -20,7 +20,7 @@
                         <div class="video--popup style--1" data-overlay="0.3">
                                 <img src="<?php echo base_url() ?>assets/img/why-choose-us-img/video-poster-1.jpg" alt="">
 
-                                <a href="https://www.youtube.com/watch?v=-GukCJLLUxE" class="btn-link" data-trigger="video_popup">
+                                <a href="https://www.youtube.com/watch?v=QwrBWK07RnU" class="btn-link" data-trigger="video_popup">
                                     <span><i class="fa fa-play"></i></span>
                                 </a>
                             </div>

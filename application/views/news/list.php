@@ -43,7 +43,7 @@
                                                     <li>
                                                         <a href="#">
                                                             <img src="img/posts-img/avatar-small-06.jpg" alt="">
-                                                            <span>Randall E. Dempsey</span>
+                                                            <span><?php  $athor =  $new->createdBy ; echo  $athor->name  ?></span>
                                                         </a>
                                                     </li>
                                                     <li>

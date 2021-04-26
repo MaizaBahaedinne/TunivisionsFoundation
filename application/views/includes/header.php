@@ -33,14 +33,72 @@
     
     <!-- ==== Color Scheme Stylesheet ==== -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/colors/color-4.css" id="changeColorScheme">
+
+    <style type="text/css">
+            .alligator-projects {
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 250px;
+    }
+
+
+    .alligator-blog-view {
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 650px;
+    }
+    </style>
+                    <style>
+
+                html {
+                        scroll-behavior: smooth;
+                    }   
+
+                .menu {
+                  position: fixed;
+                  left: 0;
+                  top: 50%;
+                  width: 8em;
+                  margin-top: -1.5em;
+                }
+
+                .ulH {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  overflow: hidden;
+                  background-color: #333333;
+                }
+
+                .liH {
+                  float: center;
+                }
+
+                .liH a {
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 16px;
+                  text-decoration: none;
+                }
+
+                .liH a:hover {
+                  background-color: #111111;
+                }
+                </style>
     
     <!-- ==== Custom Stylesheet ==== -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/custom.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/dropify.min.css">
 
     <script defer type="text/javascript" src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js" ></script>
+    <script defer src="<?php echo base_url() ?>assets/js/dropify.min.js"></script> 
+    <script src="https://cdn.tiny.cloud/1/vqf4xobfz4h7owrwfo1qar98sig5s2yt4cgnuskbexcf8zqh/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
           
     <!-- ==== HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries ==== -->
     <!--[if lt IE 9]>
@@ -85,10 +143,29 @@
                         </li>
                     -->
                         <li>
-                            <a href="<?php echo base_url() ?>Admin" class="btn-link">
+                            <?php if($uid == 0){ ?>
+                            <a  data-toggle="modal" data-target="#Login" class="btn-link">
                                 <i class="fa mr--8 fa-user-o"></i>
                                 <span>Se connecter</span>
                             </a>
+                            <?php } if($uid > 0){?>
+                            <a  class="btn-link">
+                                
+                                <li class="dropdown">
+                                <a  class="dropdown-toggle" data-toggle="dropdown">
+                                    <span><?php echo $name ?></span>
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <?php if($SA == 1 || $SA == 2 ){ ?>
+                                    <li><a href="<?php echo base_url() ?>News/Add"><span>Gerer les nouvelles</span></a></li>
+                                    <?php } ?>
+                                    <li class="btn-danger" ><a href=""><span>Deconnxion</span></a></li>
+                                </ul>
+                            </li>
+                            </a>
+                        <?php } ?>
                         </li>
                     </ul>
                     <!-- Header Topbar Links End -->
@@ -125,12 +202,12 @@
 
                             <li class="dropdown">
                                 <a  class="dropdown-toggle" data-toggle="dropdown">
-                                    <span>Présentation</span>
+                                    <span>Qui Sommes nous ? </span>
                                     <i class="fa fa-caret-down"></i>
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <li><a href="<?php echo base_url() ?>About"><span>A Propos</span></a></li>
+                                    <li><a href="<?php echo base_url() ?>About"><span>Présentation</span></a></li>
                                     <li><a href="<?php echo base_url() ?>About#Vsions"><span>Visions</span></a></li>
                                     <li><a href="<?php echo base_url() ?>About#Missions"><span>Missions</span></a></li>
                                     <li><a href="<?php echo base_url() ?>About#Valeurs"><span>Valeurs</span></a></li>
@@ -167,12 +244,27 @@
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <span>Actualités</span>
+                                    <span>Media</span>
                                     <i class="fa fa-caret-down"></i>
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <li><a href="<?php echo base_url() ?>News"><span>Nouvelles</span></a></li>
+                                    <li><a href="<?php echo base_url() ?>News"><span>Actualité</span></a></li>
+                                    
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span>Mediathèque</span>
+                                            <i class="fa fa-caret-down"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a href="<?php echo base_url() ?>Media/media/TFM"><span>TFM</span></a></li>
+                                            <li><a href="<?php echo base_url() ?>Media/media/TUM"><span>TUM</span></a></li>
+                                            <li><a href="<?php echo base_url() ?>Media/media/OFF"><span>OFF</span></a></li>
+                                            <li><a href="<?php echo base_url() ?>Media/media/Phoenix"><span>Phoenix</span></a></li>
+                                        </ul>
+                                    </li>
 
                                 </ul>
                             </li>

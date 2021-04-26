@@ -7,10 +7,11 @@ class Media_model extends CI_Model {
      * table media_album
      */
 
-        function albumListing()
+        function albumListing($categorie)
             {
                  $this->db->select('*');
                 $this->db->from('tbl_media_album as BaseTbl');
+                $this->db->where('BaseTbl.categorie = ', $categorie); 
                 $this->db->order_by('BaseTbl.createdDtm', 'DESC');
                 $query = $this->db->get();
                 $result = $query->result();
@@ -21,10 +22,10 @@ class Media_model extends CI_Model {
         function albumContent($albumId)
             {
                 $this->db->select('*');
-                $this->db->from('tbl_media_album as BaseTbl');
+                $this->db->from('tbl_media_album_content as BaseTbl');
                 $this->db->where('BaseTbl.albumId = ',$albumId);
                 $query = $this->db->get();
-                $result = $query->row();
+                $result = $query->result();
                 return $result;
             }
 

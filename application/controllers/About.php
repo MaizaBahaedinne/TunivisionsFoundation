@@ -12,6 +12,8 @@ class About extends BaseController{
 		$this->load->model('values_model');
 		$this->load->model('vision_model');
 		$this->load->model('mission_model');
+
+		$this->isLoggedIn();  	
 	}
 
 

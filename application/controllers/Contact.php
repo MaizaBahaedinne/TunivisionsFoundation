@@ -11,7 +11,7 @@ public function __construct()
         $this->load->model('newletter_model');
 
 
-
+$this->isLoggedIn(); 
     }
 
 

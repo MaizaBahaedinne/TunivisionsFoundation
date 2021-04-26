@@ -10,7 +10,7 @@ public function __construct()
         parent::__construct();
         $this->load->model('news_model');
 
-
+        	$this->isLoggedIn();  	
     }
 
 	/**
@@ -35,8 +35,18 @@ public function __construct()
 
       
 
-        $this->global['pageTitle'] = 'Actualité | ';
-        $data["newsRecords"]=$this->news_model->newsListing();
+       $this->global['pageTitle'] = 'Actualité | ';
+       $data["newsRecords"]=$this->news_model->newsListing();
+       foreach ($data["newsRecords"] as $new ) {
+
+       		$response = file_get_contents('http://127.0.0.1/Link/API/userAPI/'.$new->createdBy);
+
+            $result = json_decode($response);
+          	$new->createdBy =  $result ; 
+       }
+
+
+       
       $this->loadViews("news/list", $this->global, $data , NULL); 
 
       
@@ -46,14 +56,31 @@ public function __construct()
 	public function new($newId)
 	{
 		$data["new"]=$this->news_model->newsInfo($newId);
+
+		$response = file_get_contents('http://127.0.0.1/Link/API/userAPI/'.$data["new"]->createdBy);
+
+        $result = json_decode($response);
+        $data["new"]->createdBy =  $result ; 
 		$this->global['pageTitle'] = $data["new"]->titreFr.' | ';
 		$this->loadViews("news/view", $this->global, $data , NULL); 
 	}
 
 
 	public function Add()
-	{
-		$this->loadViews("news/new", $this->global, Null , NULL); 
+	{		
+		$this->global['page'] = 'Nouvelles';
+		$this->global['pageTitle'] = 'Nouvelles | ';
+	       $data["newsRecords"]=$this->news_model->newsListing();
+	       foreach ($data["newsRecords"] as $new ) {
+
+       		$response = file_get_contents('http://127.0.0.1/Link/API/userAPI/'.$new->createdBy);
+            $result = json_decode($response);
+          	$new->createdBy =  $result ; 
+          	$response = file_get_contents('http://127.0.0.1/Link/API/clubInfoAPI/'.$new->clubId);
+            $result = json_decode($response);
+            $new->club =  $result ;
+       }
+		$this->loadViews("news/listback", $this->global, $data , NULL); 
 	}
 
 	public function Edit($newId)
@@ -82,6 +109,7 @@ public function __construct()
 											  'contentAr'=>$contentAr,
 											  'titreEn'=> $titreEn,
 				                              'contentEn'=>$contentEn,
+				                              'createdBy'=>$this->vendorId,
 				                               'createdDTM'=>date('Y-m-d H:i:s'),
 				                               'media' => $file_name ,
 				                               'mediaType' => "photo"

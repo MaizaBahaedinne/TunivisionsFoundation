@@ -10,10 +10,23 @@ public function __construct()
         parent::__construct();
         $this->load->model('media_model');
         $this->load->model('news_model');
+        $this->isLoggedIn(); 
 
 
     }
 
+    public function media($categorie)
+  {
+      $data["albumRecords"]=$this->media_model->albumListing($categorie);
+      foreach ($data["albumRecords"] as $album ) {
+        $album->albumcontent = $this->media_model->albumContent($album->albumId);
+      }
+     
+
+
+      $this->global['pageTitle'] = 'Mediatheque | ';   
+      $this->loadViews("media/album", $this->global, $data , NULL); 
+    }
    
 
 
@@ -75,12 +88,7 @@ public function __construct()
 
 
 
-	public function mediaListing()
-	{
-		$data["albumRecords"]=$this->media_model->albumListing();
-       
-		$this->loadViews("media/album", $this->global, $data , NULL); 
-    }
+	
     
     public function mediaById($albumId){
 

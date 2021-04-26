@@ -266,7 +266,68 @@
     <!-- ==== Main Script ==== -->
     <script src="<?php echo base_url() ?>assets/js/main.js"></script>
 
+      <script>
+    tinymce.init({
+      selector: '#TinyMCE',
+      plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+      toolbar_mode: 'floating',
+    });
 
+            $(document).ready(function(){
+                
+              // Translated
+                $('.dropify-fr').dropify({
+                    messages: {
+                        default: 'Glissez-déposez un fichier ici ou cliquez',
+                        replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                        remove:  'Supprimer',
+                        error:   'Désolé, le fichier trop volumineux'
+                    }
+                });
+
+                // Used events
+                var drEvent = $('#input-file-events').dropify();
+
+                drEvent.on('dropify.beforeClear', function(event, element){
+                    return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+                });
+
+                drEvent.on('dropify.afterClear', function(event, element){
+                    alert('File deleted');
+                });
+
+                drEvent.on('dropify.errors', function(event, element){
+                    console.log('Has Errors');
+                });
+
+
+
+                
+
+
+            });
+        </script>
+
+    <div class="modal fade" id="Login">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+    
+                <div class="modal-body">
+                    <h2 style="text-align: center">Se connecter</h2>
+                  <form class="c-form" method="post" action="<?php echo base_url() ?>Login/loginMe">
+                   <label>E-Mail</label>
+                   <input type="email"  name="email"  class="form-control" required>
+                   <label>Mot de  passe</label>
+                   <input type="password" name="password"  class="form-control"  required>
+                   
+                   <hr>
+                   <input type="submit"  class="btn btn-block btn-primary" value="Se connecter">
+                   </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 </body>
 

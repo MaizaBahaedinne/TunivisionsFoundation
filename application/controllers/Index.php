@@ -10,7 +10,7 @@ public function __construct()
         parent::__construct();
         $this->load->model('news_model');
 
-
+        $this->isLoggedIn();  	
     }
 
 	/**

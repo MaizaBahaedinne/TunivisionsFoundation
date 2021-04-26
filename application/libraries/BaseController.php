@@ -38,7 +38,7 @@ class BaseController extends CI_Controller {
 		$isLoggedIn = $this->session->userdata ( 'isLoggedIn' );
 		
 		if (! isset ( $isLoggedIn ) || $isLoggedIn != TRUE) {
-			redirect ( 'login' );
+			$this->global ['uid'] = 0 ;
 		} else {
 			$this->role = $this->session->userdata ( 'role' );
 			$this->vendorId = $this->session->userdata ( 'userId' );
@@ -66,43 +66,8 @@ class BaseController extends CI_Controller {
 		}
 	}
 
-		/**
-	 * This function used to check the user is logged in or not
-	 */
-	function isLoggedInPub() {
-		$isLoggedIn = $this->session->userdata ( 'isLoggedIn' );
-		
-		if (! isset ( $isLoggedIn ) || $isLoggedIn != TRUE) {
-			$this->global ['name'] = '';
-			$this->global ['clubID'] = '';
-		} else {
-			$this->role = $this->session->userdata ( 'role' );
-			$this->vendorId = $this->session->userdata ( 'userId' );
-			$this->clubID = $this->session->userdata ( 'clubID' );
-			$this->name = $this->session->userdata ( 'name' );
-			$this->roleText = $this->session->userdata ( 'roleText' );
-			$this->lastLogin = $this->session->userdata ( 'lastLogin' );
-			$this->avatar = $this->session->userdata ( 'avatar' );
-			$this->cellule = $this->session->userdata ( 'cellule' );
-			$this->isBlocked = $this->session->userdata ( 'isDeleted' );
-			$this->SA = $this->session->userdata ( 'SA' );
-
-			$this->global ['uid'] = $this->vendorId;
-			$this->global ['name'] = $this->name;
-			$this->global ['clubID'] = $this->clubID;
-			$this->global ['cellule'] = $this->cellule;
-			$this->global ['avatar'] = $this->avatar;
-			$this->global ['role'] = $this->role;
-			$this->global ['role_text'] = $this->roleText;
-			$this->global ['last_login'] = $this->lastLogin;
-			$this->global ['HUA'] = $this->HUA;
-			$this->global ['isBlocked'] = $this->isBlocked;
-			$this->global ['SA'] = $this->SA;
-
-
-
-		}
-	}
+	
+	
 
 	
 	/**

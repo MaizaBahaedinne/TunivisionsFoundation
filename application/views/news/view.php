@@ -25,7 +25,7 @@
                             <div class="post--item post--single pb--30">
                                 <!-- Post Image Start -->
                                 <div class="post--img" >
-                                    <a href=""><img src="<?php echo base_url()  ?>uploads/news/<?php echo $new->media ?>" style="width: 100% " alt=""></a>
+                                    <a href=""><img src="<?php echo base_url()  ?>uploads/news/<?php echo $new->media ?>" style="width: 100% " class="alligator-blog-view" alt="" ></a>
                                 </div>
                                 <!-- Post Image End -->
 
@@ -145,26 +145,29 @@
                             </div>
                             <!-- Post Nav End -->
 
-                            <!-- Post Author Start -->f"
+                            <!-- Post Author Start -->
                             <div class="post--author pt--40 pb--30">
                                 <div class="post--author-inner clearfix bg--img" data-rjs="2" style="background-image: url(&quot;img/posts-img/author-bg.png&quot;);">
                                     <div class="img mr--30 text-black text-center float--left">
                                         <img src="img/posts-img/author.jpg" alt="">
 
-                                        <p><a href="#" class="btn-link">Carla W. Carter</a></p>
+                                        <p><a href="#" class="btn-link"></a></p>
                                     </div>
 
                                     <div class="info ov--h fs--14 pt--8">
+                                        <?php echo $new->createdBy->name ?><br>
+                                        
                                         <div class="desc fw--500 fstyle--i">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+                                            <p><?php echo $new->createdBy->role ?> <?php echo $new->createdBy->cellule ?></p>
                                         </div>
+                                        <small>Club Tunivisions <?php echo $new->createdBy->ClubName ?></small>
+
 
                                         <div class="social text-gray">
                                             <ul class="nav">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="<?php echo $new->createdBy->facebook ?>"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="<?php echo $new->createdBy->instagram ?>"><i class="fa fa-instagram"></i></a></li>
+                                                <li><a href="<?php echo $new->createdBy->linkedin ?>"><i class="fa fa-linkedin"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -254,8 +257,8 @@
                                         <!-- Post Item Start -->
                                         <div class="post--item">
                                             <!-- Post Image Start -->
-                                            <div class="post--img">
-                                                <a href="blog-details.html"><img src="<?php echo base_url()  ?>uploads/news/<?php echo $new->media?>" alt=""></a>
+                                            <div class="post--img"> 
+                                                <a href="blog-details.html"><img src="<?php echo base_url()  ?>uploads/news/<?php echo $new->media?>" class="alligator-projects" alt=""></a>
                                             </div>
                                             <!-- Post Image End -->
 
@@ -335,7 +338,7 @@
                                         <div class="post--item">
                                             <!-- Post Image Start -->
                                             <div class="post--img">
-                                                <a href="blog-details.html"><img src="<?php echo base_url()  ?>uploads/news/<?php echo $new->media?>" alt=""></a>
+                                                <a href="blog-details.html"><img src="<?php echo base_url()  ?>uploads/news/<?php echo $new->media?>" class="alligator-projects" alt=""></a>
                                             </div>
                                             <!-- Post Image End -->
 

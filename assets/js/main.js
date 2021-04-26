@@ -171,7 +171,7 @@ Author URI  : https://themeforest.net/user/themelooks
                 iframe: {
                     patterns: {
                         youtube: {
-                            src: '//www.youtube.com/embed/%id%?autoplay=1&amp;rel=0&amp;fs=1&amp;loop=1'
+                            src: '//www.youtube.com/embed/%id%?autoplay=1&controls=0&fs=0&loop=1&playsinline=1&iv_load_policy=3"'
                         }
                     }
                 }
@@ -244,7 +244,7 @@ Author URI  : https://themeforest.net/user/themelooks
                 items: checkData( $t.data('owl-items'), 1 ),
                 margin: checkData( $t.data('owl-margin'), 0 ),
                 loop: checkData( $t.data('owl-loop'), true ),
-                smartSpeed: 7000,
+                smartSpeed: 500,
                 autoplay: checkData( $t.data('owl-autoplay'), true ),
                 autoplayTimeout: checkData( $t.data('owl-speed'), 8000 ),
                 center: checkData( $t.data('owl-center'), false ),
