@@ -86,7 +86,9 @@
                         <!-- Feature Item Start -->
                         <div class="feature--item bg-default text-center">
                             <div class="title">
-                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">350</span>+</h2>
+                                <h2 class="h1 ff--default text-primary">+<span data-trigger="counterup">
+                                    <?php $response = file_get_contents('http://127.0.0.1/Link/API/clubListingAPI/5');
+                                    $result = json_decode($response); echo count($result) ; ?></span></h2>
                             </div>
 
                             <div class="sub-title">
@@ -104,7 +106,8 @@
                         <!-- Feature Item Start -->
                         <div class="feature--item bg-default text-center">
                             <div class="title">
-                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">16</span>k+</h2>
+                                <h2 class="h1 ff--default text-primary">+<span data-trigger="counterup"><?php $response = file_get_contents('http://127.0.0.1/Link/API/usersListingAPI');
+                                    $result = json_decode($response); echo count($result) ; ?></span></h2>
                             </div>
 
                             <div class="sub-title">
@@ -122,7 +125,8 @@
                         <!-- Feature Item Start -->
                         <div class="feature--item bg-default text-center">
                             <div class="title">
-                                <h2 class="h1 ff--default text-primary"><span data-trigger="counterup">2</span>k+</h2>
+                                <h2 class="h1 ff--default text-primary">+<span data-trigger="counterup">><span data-trigger="counterup"><?php $response = file_get_contents('http://127.0.0.1/Link/API/ProjectListingAPI');
+                                    $result = json_decode($response); echo count($result) ; ?></span>k+</h2>
                             </div>
 
                             <div class="sub-title">
